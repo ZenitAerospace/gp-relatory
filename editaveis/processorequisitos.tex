@@ -1,8 +1,15 @@
-\chapter[Processo de engenharia de requisitos]{Processo de engenharia de requisitos}
+\section[Processo de engenharia de requisitos]{Processo de engenharia de requisitos}
 
 A figura \ref{processo} é o modelo proposto baseado no Scalade Agile Framework e nas atividades 5 atividades da engenharia de requisitos: Elicitar; Documentar; Analisar e negociar; Verificar e validar; Gerenciar requisitos. As atividades relacionadas a elicitação então, tratam da especificação em forma de artefato do que o cliente precisa. A documentação é a própria produção dos artefatos. A análise e negociação é a atividade que avalia e negocia o espoco do sistema e sua viabilidade. A verificação e validação é para identificar possíveis inconsistências e incoerências com os requisitos elicitados. O gerenciamento dos requisitos é atividade que acompanha a vida dos requisitos ao longo do desenvolvimento do projeto. Assim, todas essas atividades serão atendidas no modelo proposto.
 
-\section{Papéis do Processo}
+\begin{figure}[H]
+    \centering
+    \caption{Processo de requisitos}
+    \label{processo}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processo.eps}
+\end{figure}
+
+\subsection[processopapeis]{Papéis do Processo}
 \begin{description}
 \item \textbf{Product Owner}
 
@@ -52,49 +59,63 @@ O papel de Architect/Engineering system, será atribuído ao time, devido o tama
     \item Critérios de desempenho do sistema como um todo.
 \end{itemize}
 \end{description}
-\section{Artefatos}
+\subsection{Artefatos}
 
 Nessa seção será abordado os artefatos que serão utilizados no sistema analisado, nos três níveis portfólio, programa, e time, segundo o framework SAFe:
 
-\subsection{Portfólio}
+\subsubsection{Portfólio}
 \begin{itemize}
     \item \textbf{Temas estratégicos:} Relacionam os objetivos do negócio do cliente com as estratégias de negócios deles. Fornecem o contexto do negócio para as decisões de investimento no Épicos \cite{safe}.
     \item \textbf{Épicos:} São o segundo nível mais alto de abstração dos requisitos, grandes containes com os valores a serem entregues ao cliente. Este pode conter épicos de negócios e habilitadores. Os épicos habilitadores representam as decisões arquiteturais e os de negócio as funcionalidades \cite{safe}.
     \item \textbf{Backlog de épicos:} Artefato para alocar todos os épicos que foram levantados com os clientes e ainda serão produzidos. Assim como contém a prioridade dos épicos que foram aprovados para implementação \cite{safe}.
 \end{itemize}
 
-\subsection{Programa}
+\subsubsection{Programa}
 \begin{itemize}
-    \item \textbf{ Features:} São serviços que tem como propósito suprir alguma necessidade dos stakeholders. Agregam valor para o usuário e são realizadas durante as releases \cite{leffingwell2011}. Existem dois tipos de features no framework adotado, os de negócio, que foi descrito acima, e os enables que são aqueles que descrevem como o sistema irá fazer certa funcionalidade. Ele engloba requisitos de desempenho, de interface externa do sistema, restrições de projeto e atributos da qualidade \cite{safe}.
-    \item \textbf{ Roadmap do programa:} Representa os entregáveis próximos na linha do tempo, ou seja, as features são dispostas em sequência de acordo com a priorização feita. Ele trás visibilidade as features que serão entregues a cada release \cite{safe}.
-    \item \textbf{ Kanban do programa:} Consiste em uma representação visual das features do estado de execução delas como feito, fazendo e a fazer ( done, doing, to do) \cite{leffingwell2011}.
-    \item \textbf{ Backlog do programa:} Representa um conjunto de features que serão implementadas para o sistema, estas já estão pontuadas de acordo com sua dificuldade técnica \cite{safe}.
-    \item \textbf{ Visão:} É um conjunto de características que definem quais serão os benefícios que serão entregue para o cliente com a entrega do sistema. Engloba a intenção estratégica do produto, o problema da aplicação, as características e as definições dos requisitos não funcionais \cite{leffingwell2011}. 
+    \item \textbf{Features:} São serviços que tem como propósito suprir alguma necessidade dos stakeholders. Agregam valor para o usuário e são realizadas durante as releases \cite{leffingwell2011}. Existem dois tipos de features no framework adotado, os de negócio, que foi descrito acima, e os enables que são aqueles que descrevem como o sistema irá fazer certa funcionalidade. Ele engloba requisitos de desempenho, de interface externa do sistema, restrições de projeto e atributos da qualidade \cite{safe}.
+    \item \textbf{Roadmap do programa:} Representa os entregáveis próximos na linha do tempo, ou seja, as features são dispostas em sequência de acordo com a priorização feita. Ele trás visibilidade as features que serão entregues a cada release \cite{safe}.
+    \item \textbf{Kanban do programa:} Consiste em uma representação visual das features do estado de execução delas como feito, fazendo e a fazer ( done, doing, to do) \cite{leffingwell2011}.
+    \item \textbf{Backlog do programa:} Representa um conjunto de features que serão implementadas para o sistema, estas já estão pontuadas de acordo com sua dificuldade técnica \cite{safe}.
+    \item \textbf{Visão:} É um conjunto de características que definem quais serão os benefícios que serão entregue para o cliente com a entrega do sistema. Engloba a intenção estratégica do produto, o problema da aplicação, as características e as definições dos requisitos não funcionais \cite{leffingwell2011}. 
 \end{itemize}
-\subsection{Time}
+\subsubsection{Time}
 \begin{itemize}
-    \item \textbf{ Histórias:} Breve descrição de uma funcionalidade que foi discutida \cite{leffingwell}. Histórias de usuário não são requisitos e sim pequenas pedaços da funcionalidade de um software descritos na linguagem natural de um usuário \cite{safe}. Neste framework, as histórias são tratadas como de usuário e enables.
-    \item \textbf{ Backlog de história:} Representa conjunto de histórias priorizadas de acordo com os interesses do cliente e restrições entre histórias, que serão implementadas para o sistema durante uma sprint \cite{safe}.
-    \item \textbf{ Historias pontuadas:} São histórias com a pontuação referente ao nível de dificuldade, complexidade e esforço para sua implementação.
-    \item \textbf{ Resumo retrospectiva:} É um resumo de todos os tópicos discutidos na retrospectiva da sprint. Serve para avaliar a forma que que tem que ser melhorado para a próxima sprint.
-    \item \textbf{ Kanban de time:} Consiste em uma representação visual das histórias de usuários que estão realizadas, as que estão sendo realizadas e as que não começaram a ser realizadas \cite{leffingwell}.
-    \item \textbf{ Atividade e seus artefatos envolvidos:} Nessa seção será abordado os artefatos que serão utilizados no sistema nos três níveis portfólio, programa, e time, analisando os artefatos que precisam ser gerados, citados na seção anterior.
+    \item \textbf{Histórias:} Breve descrição de uma funcionalidade que foi discutida \cite{leffingwell2011}. Histórias de usuário não são requisitos e sim pequenas pedaços da funcionalidade de um software descritos na linguagem natural de um usuário \cite{safe}. Neste framework, as histórias são tratadas como de usuário e enables.
+    \item \textbf{Backlog de história:} Representa conjunto de histórias priorizadas de acordo com os interesses do cliente e restrições entre histórias, que serão implementadas para o sistema durante uma sprint \cite{safe}.
+    \item \textbf{Historias pontuadas:} São histórias com a pontuação referente ao nível de dificuldade, complexidade e esforço para sua implementação.
+    \item \textbf{Resumo retrospectiva:} É um resumo de todos os tópicos discutidos na retrospectiva da sprint. Serve para avaliar a forma que que tem que ser melhorado para a próxima sprint.
+    \item \textbf{Kanban de time:} Consiste em uma representação visual das histórias de usuários que estão realizadas, as que estão sendo realizadas e as que não começaram a ser realizadas \cite{leffingwell2011}.
+    \item \textbf{Atividade e seus artefatos envolvidos:} Nessa seção será abordado os artefatos que serão utilizados no sistema nos três níveis portfólio, programa, e time, analisando os artefatos que precisam ser gerados, citados na seção anterior.
 \end{itemize}
 
-\begin{figure}[H]
+\subsection{Descrição de tividades}
+
+As descrições das atividades de cada subprocesso a seguir contém as informações de acordo com o quadro \ref{descricaoAtividades}. Essas informações são as necessárias para que a equipe de elicitação seja capaz de desempenhar cada aditividade corretamente.
+
+\begin{table}[h]
     \centering
-    \caption{Processo de requisitos}
-    \label{processo}
-    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processo.eps}
-\end{figure}
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Nome significativo, coerente com a descrição da atividade \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Indica quais são os artefatos já produzidos que serão necessários para o desenvolvimento desta atividade \\
+        \hline
+        \textbf{Descrição} & Descreve resumidamente quais serão os passos necessários para que a atividade seja executada, e possibilite a sua execução. \\
+        \hline
+        \textbf{Artefato de saída} & Após a execução da atividade, os artefatos produzidos são listados neste campo. \\
+        \hline
+        \textbf{Responsável} & Dentre os papeis descritos, aqui será indicado qual o papel responsável pela execução da tarefa.\\
+        \hline
+    \end{tabular}
+\end{table}
 
-
-
-
-\section{Portfólio}
+\subsubsection{Portfólio}
 
 Neste nível do SAFe, os requisitos são tratados de forma mais abstrata e menos detalhada. Identifica-se as necessidades e o problema da empresa. Assim como os interesses de investimentos dela, representados pelos temas estratégicos.
-\subsection{Subprocesso identificar interesses da empresa}
+
+\subsubsection{Subprocesso identificar interesses da empresa}
 
 Este sub processo, imagem \ref{processoInteresses} representa um conjunto de atividades voltadas ao levantamento dos interesses de investimento do cliente para sua empresa. Define-se os temas estratégicos da empresa.
 
@@ -105,8 +126,24 @@ Este sub processo, imagem \ref{processoInteresses} representa um conjunto de ati
     \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoInteresses.eps}
 \end{figure}
 
-
-Elicitar temas estratégicos
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Elicitar temas estratégicos \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Indica quais são os artefatos já produzidos que serão necessários para o desenvolvimento desta atividade \\
+        \hline
+        \textbf{Descrição} & Descreve resumidamente quais serão os passos necessários para que a atividade seja executada, e possibilite a sua execução. \\
+        \hline
+        \textbf{Artefato de saída} & Após a execução da atividade, os artefatos produzidos são listados neste campo. \\
+        \hline
+        \textbf{Responsável} & Dentre os papeis descritos, aqui será indicado qual o papel responsável pela execução da tarefa.\\
+        \hline
+    \end{tabular}
+\end{table}
 
 Artefato(s) de entrada: Contexto do negócio.
 
@@ -125,7 +162,7 @@ Artefato de saída: Temas estratégicos validados
 
 Responsável: Product manager
 
-\subsection{ Subprocesso identificar valores para empresa}
+\subsubsection{ Subprocesso identificar valores para empresa}
 
 O produto a ser desenvolvido, em um nível mais abstrato, define quais os valores que esse entregará ao cliente, empresa. Assim sendo, este subprocesso trata de identificar e priorizar os itens que proverão valores a empresa, representados pelos artefatos épicos.
 
@@ -183,9 +220,9 @@ Artefato de saída: Épicos priorizados.
 
 Responsável: Product owner
 
-\section{Programa}
+\subsection{Programa}
 
-\subsection{Subprocesso desenvolver programa}
+\subsubsection{Subprocesso desenvolver programa}
 
 O nível de programa é o onde as features são definidas, avaliadas e documentadas. O conjunto de atividades a seguir permitem que sejam elaborado o conjunto de features que representam as várias características do produto final de acordo com um épico a ser entregue para o cliente.
 
@@ -265,8 +302,8 @@ Descrição: Elabora o Kaban de features com as decisões tomadas na etapa de de
 Artefato de saída: Kanban de features.
 
 Responsável: Product manager
-\section{Time}
-\subsection{ Subprocesso identificar histórias}
+\subsection{Time}
+\subsubsection{ Subprocesso identificar histórias}
 
 Nesta etapa do processo, as features definidas serão detalhadas na forma de histórias de usuário elicitados com os usuários. A fim de prover um conjunto de histórias priorizadas para a implementação.
 
@@ -317,7 +354,7 @@ Artefatos de saída: Backlog priorizado.
 
 Responsável: Product Owner
 
-\subsection{Subprocesso Planejar sprint}
+\subsubsection{Subprocesso Planejar sprint}
 
 Nessa seção serão definidas as atividades necessárias para projetar uma sprint.
 \begin{figure}[H]
@@ -356,7 +393,7 @@ Artefatos de saída: Kanban de histórias.
 
 Responsável: Time
 
-\subsection{Executar Sprint}
+\subsubsection{Executar Sprint}
 
 Nessa seção será definida as atividades necessárias durante a realização de uma sprint.
 
@@ -396,7 +433,7 @@ Artefato de saída: Gráfico burndown.
 Responsável: Scrum Master
 
 
-\section{Subprocesso Gerência de Requisitos}
+\subsection{Subprocesso Gerência de Requisitos}
 
 A engenharia de requisitos é um processo que engloba todas as atividades que contribuem para a produção de um documento de requisitos e sua manutenção ao longo do tempo(https://pt.wikipedia.org/wiki/Engenharia\_de\_requisitos ).
 
