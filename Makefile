@@ -16,11 +16,9 @@ FIXOS_FILES = $(addprefix $(FIXOS_DIR)/, $(FIXOS_SOURCES))
 
 EDITAVEIS_DIR = editaveis
 EDITAVEIS_SOURCES = informacoes.tex \
-					epigrafe.tex resumo.tex abstract.tex \
+					resumo.tex abstract.tex \
 					abreviaturas.tex simbolos.tex introducao.tex \
-					textoepostexto.tex \
-					apendices.tex anexos.tex \
-                    context.tex planejamento.tex processo.tex \
+					context.tex planejamento.tex processo.tex \
                     processorequisitos.tex ferramentas.tex\
                     processoqualidade.tex elicitacao.tex gerenciarequisitos.tex
 
