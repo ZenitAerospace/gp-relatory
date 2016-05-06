@@ -134,35 +134,37 @@ Este sub processo, imagem \ref{processoInteresses} representa um conjunto de ati
         \hline
         \textbf{Nome} & Elicitar temas estratégicos \\
         \hline
-        \textbf{Artefato(s) de entrada} & Indica quais são os artefatos já produzidos que serão necessários para o desenvolvimento desta atividade \\
+        \textbf{Artefato(s) de entrada} & Contexto do negócio \\
         \hline
-        \textbf{Descrição} & Descreve resumidamente quais serão os passos necessários para que a atividade seja executada, e possibilite a sua execução. \\
+        \textbf{Descrição} & Reunião com o cliente utilizando técnicas de elicitação de requisitos para identificar as oportunidades de negócio. \\
         \hline
-        \textbf{Artefato de saída} & Após a execução da atividade, os artefatos produzidos são listados neste campo. \\
+        \textbf{Artefato de saída} & Temas estratégicos elicitados \\
         \hline
-        \textbf{Responsável} & Dentre os papeis descritos, aqui será indicado qual o papel responsável pela execução da tarefa.\\
+        \textbf{Responsável} & Product manager\\
         \hline
     \end{tabular}
 \end{table}
 
-Artefato(s) de entrada: Contexto do negócio.
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Validar temas estratégicos \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Temas estratégicos \\
+        \hline
+        \textbf{Descrição} & Validar com o cliente se os temas estratégicos correspondem aos interesses de investimento da empresa naquele momento \\
+        \hline
+        \textbf{Artefato de saída} & Temas estratégicos validados \\
+        \hline
+        \textbf{Responsável} & Product manager\\
+        \hline
+    \end{tabular}
+\end{table}
 
-Descrição: Reunião com o cliente utilizando técnicas de elicitação de requisitos para identificar as oportunidades de negócio.
-
-Artefato de saída: Temas estratégicos elicitados
-
-Responsável: Product manager
-Validar temas estratégicos
-
-Artefato(s) de entrada: Temas estratégicos
-
-Descrição: Validar com o cliente se os temas estratégicos correspondem aos interesses de investimento da empresa naquele momento.
-
-Artefato de saída: Temas estratégicos validados
-
-Responsável: Product manager
-
-\subsubsection{ Subprocesso identificar valores para empresa}
+\subsubsection{Subprocesso identificar valores para empresa}
 
 O produto a ser desenvolvido, em um nível mais abstrato, define quais os valores que esse entregará ao cliente, empresa. Assim sendo, este subprocesso trata de identificar e priorizar os itens que proverão valores a empresa, representados pelos artefatos épicos.
 
@@ -173,52 +175,100 @@ O produto a ser desenvolvido, em um nível mais abstrato, define quais os valore
     \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoValores.eps}
 \end{figure}
 
-Elicitar épicos
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Elicitar épicos \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Temas estratégicos \\
+        \hline
+        \textbf{Descrição} & Reunião com o cliente utilizando técnicas de elicitação de requisitos para identificar os épicos de negócios e habilitadores. \\
+        \hline
+        \textbf{Artefato de saída} & Épicos \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato(s) de entrada: Temas estratégicos
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Analisar viabilidade de épicos \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Épicos \\
+        \hline
+        \textbf{Descrição} & Determinar se os épicos, tanto de negócio quanto habilitadores, são viáveis com base na tecnologia, tempo e custo. Se necessário dividir em mais épicos. \\
+        \hline
+        \textbf{Artefato de saída} & Épicos analisados \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Descrição: Reunião com o cliente utilizando técnicas de elicitação de requisitos para identificar os épicos de negócios e habilitadores.
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Verificar e validar épicos \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Épicos analisados \\
+        \hline
+        \textbf{Descrição} & Verificar com o cliente se os épicos analisados correspondem aos itens que o cliente deseja. \\
+        \hline
+        \textbf{Artefato de saída} & Épicos verificados e validados. \\
+        \hline
+        \textbf{Responsável} & Product Owner \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato de saída: Épicos
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Criar backlog de épicos \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Épicos verificados e validados \\
+        \hline
+        \textbf{Descrição} & Criar o backlog com os épicos de acordo com as priorizações estabelecidas pela atividade de priorizar épicos. \\
+        \hline
+        \textbf{Artefato de saída} & Backlog de épicos. \\
+        \hline
+        \textbf{Responsável} & Product owner \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Responsável: Product manager
-Analisar viabilidade de épicos
-
-Artefato(s) de entrada: Épicos
-
-Descrição: Determinar se os épicos, tanto de negócio quanto habilitadores, são viáveis com base na tecnologia, tempo e custo. Se necessário dividir em mais épicos.
-
-Artefato de saída: Épicos analisados
-
-Responsável: Product manager
-Verificar e validar épicos
-
-Artefato(s) de entrada: Épicos analisados
-
-Descrição: Verificar com o cliente se os épicos analisados correspondem aos itens que o cliente deseja.
-
-Artefato de saída: Épicos verificados e validados.
-
-Responsável: Product Owner
-
-Criar backlog de épicos
-
-Artefato(s) de entrada: Épicos verificados e validados
-
-Descrição: Criar o backlog com os épicos de acordo com as priorizações estabelecidas pela atividade de priorizar épicos.
-
-Artefato de saída: Backlog de épicos.
-
-Responsável: Product owner
-Priorizar épicos
-
-Artefato(s) de entrada: Backlog de épicos
-
-Descrição: Reunir e classificar os épicos de acordo com sua importância para os interesses de negócio do cliente. Assim como definir as relações de dependência entre eles.
-
-Artefato de saída: Épicos priorizados.
-
-Responsável: Product owner
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Priorizar épicos \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Backlog de épicos \\
+        \hline
+        \textbf{Descrição} & Reunir e classificar os épicos de acordo com sua importância para os interesses de negócio do cliente. Assim como definir as relações de dependência entre eles. \\
+        \hline
+        \textbf{Artefato de saída} & Épicos priorizados. \\
+        \hline
+        \textbf{Responsável} & Product owner \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \subsection{Programa}
 
@@ -233,75 +283,139 @@ O nível de programa é o onde as features são definidas, avaliadas e documenta
     \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoPrograma.eps}
 \end{figure}
 
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Elicitar features \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Épico priorizados. \\
+        \hline
+        \textbf{Descrição} & Essa atividade é responsável pelo levantamento das features de negócio e habilitadores que serão necessárias para realização de cada release. \\
+        \hline
+        \textbf{Artefato de saída} & Features \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Analisar features \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Features \\
+        \hline
+        \textbf{Descrição} & Analisar as features elaboradas, e estimar o escopo das features determinar sua viabilidade técnica e averiguar a possibilidade de dividir em itens menores para o backlog. \\
+        \hline
+        \textbf{Artefato de saída} & Features analisadas \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Verificar e Validar features \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Features analisadas \\
+        \hline
+        \textbf{Descrição} & Verificar e validar com o Product onwer as features que foram analisadas se elas correspondem as necessidades do cliente, empresa. \\
+        \hline
+        \textbf{Artefato de saída} & Features validadas \\
+        \hline
+        \textbf{Responsável} & Product Manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Elicitar features
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Montar backlog de features \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Features validadas. \\
+        \hline
+        \textbf{Descrição} & Agrupar todas as features validadas com o cliente que ainda não foram implementadas em um único documento, a fim de se ter visão do que será produzido para o produto. \\
+        \hline
+        \textbf{Artefato de saída} & Backlog de features. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato(s) de entrada: Épico priorizados.
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Priorizar features \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Backlog de features; \\
+        \hline
+        \textbf{Descrição} & Classificar as features de acordo com sua importância para o projeto, ou seja, classifica-se pelo valor entregue, redução de risco, oportunidade de habilitar um valor. \\
+        \hline
+        \textbf{Artefato de saída} & Roadmap de features. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Descrição: Essa atividade é responsável pelo levantamento das features de negócio e habilitadores que serão necessárias para realização de cada release.
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Elaborar visão \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Roadmap de features. \\
+        \hline
+        \textbf{Descrição} & Escreve o documento de visão do projeto com as decisões tomadas na etapa de desenvolver do programa. \\
+        \hline
+        \textbf{Artefato de saída} & Documento de visão. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato de saída: Features
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Elaborar Kanban de features \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Roadmap de features. \\
+        \hline
+        \textbf{Descrição} & Elabora o Kaban de features com as decisões tomadas na etapa de desenvolver do programa. \\
+        \hline
+        \textbf{Artefato de saída} & Kanban de features. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Responsável: Product manager
-
-Analisar features
-
-Artefato(s) de entrada: Features
-
-Descrição: Analisar as features elaboradas, e estimar o escopo das features determinar sua viabilidade técnica e averiguar a possibilidade de dividir em itens menores para o backlog.
-
-Artefato de saída: Features analisadas
-
-Responsável: Product manager
-
-Verificar e Validar features
-
-Artefato(s) de entrada: Features analisadas
-
-Descrição: Verificar e validar com o Product onwer as features que foram analisadas se elas correspondem as necessidades do cliente, empresa.
-
-Artefato de saída: Features validadas
-
-Responsável: Product Manager
-Montar backlog de features
-
-Artefato(s) de entrada: Features validadas.
-
-Descrição: Agrupar todas as features validadas com o cliente que ainda não foram implementadas em um único documento, a fim de se ter visão do que será produzido para o produto.
-
-Artefato de saída: Backlog de features.
-
-Responsável: Product manager
-Priorizar features
-
-Artefato(s) de entrada: Backlog de features;
-
-Descrição: Classificar as features de acordo com sua importância para o projeto, ou seja, classifica-se pelo valor entregue, redução de risco, oportunidade de habilitar um valor.
-
-Artefato de saída: Roadmap de features.
-
-Responsável: Product manager
-Elaborar visão
-
-Artefato(s) de entrada: Roadmap de features.
-
-Descrição: Escreve o documento de visão do projeto com as decisões tomadas na etapa de desenvolver do programa.
-
-Artefato de saída: Documento de visão.
-
-Responsável: Product manager
-
-Elaborar Kanban de features
-
-Artefato(s) de entrada: Roadmap de features.
-
-Descrição: Elabora o Kaban de features com as decisões tomadas na etapa de desenvolver do programa.
-
-Artefato de saída: Kanban de features.
-
-Responsável: Product manager
 \subsection{Time}
 \subsubsection{ Subprocesso identificar histórias}
 
@@ -314,45 +428,81 @@ Nesta etapa do processo, as features definidas serão detalhadas na forma de his
     \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoHistorias.eps}
 \end{figure}
 
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Elicitar histórias \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Kanban de features e o Documento de visão. \\
+        \hline
+        \textbf{Descrição} & Consiste no levantamento das histórias feitas pelo time juntamente com o product owner, utilizando as técnicas de elicitações. Os tipos de histórias elicitados serão histórias de usuário e habilitadoras. \\
+        \hline
+        \textbf{Artefato de saída} & Histórias elicitadas. \\
+        \hline
+        \textbf{Responsável} & Time \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Preparar para elicitação
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Definir critério de aceitação \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Historias elicitadas. \\
+        \hline
+        \textbf{Descrição} & Consiste em definir quais são os critérios que devem ser seguidos para que a histórias de usuário sejam aceitas como completadas. \\
+        \hline
+        \textbf{Artefato de saída} & Historias de usuário com critérios de aceitação. \\
+        \hline
+        \textbf{Responsável} & Time \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Entrada: Features
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Elicitar histórias \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Kanban de features e o Documento de visão. \\
+        \hline
+        \textbf{Descrição} & Consiste no levantamento das histórias feitas pelo time juntamente com o product owner, utilizando as técnicas de elicitações. Os tipos de histórias elicitados serão histórias de usuário e habilitadoras. \\
+        \hline
+        \textbf{Artefato de saída} & Histórias elicitadas. \\
+        \hline
+        \textbf{Responsável} & Time \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Descrição : Identificar técnica utilizando como base nas features definidas na etapas anteriores, definindo a pauta da reunião em questão.
-
-Saída: Pauta da reunião
-
-Aplicar técnica de elicitação de requisitos
-
-Definir critério de aceitação
-
-Artefato(s) de entrada: Historias elicitadas.
-
-Descrição: Consiste em definir quais são os critérios que devem ser seguidos para que a histórias de usuário sejam aceitas como completadas.
-
-Artefatos de saída: Historias de usuário com critérios de aceitação.
-
-Responsável: Time
-Verificar e Validar histórias
-
-Artefato(s) de entrada: Historias de usuários com critérios de aceitação.
-
-Descrição: Consiste em avaliar se as histórias estão sendo condizentes com a problemática, ou seja, se representam bem as pequenas partes da funcionalidades. E depois da validação, documentá-las em um backlog de histórias.
-
-Artefatos de saída: Backlog de histórias.
-
-Responsável: Product Owner
-
-Priorizar histórias
-
-Artefato(s) de entrada: Backlog de histórias.
-
-Descrição: As histórias de usuário serão priorizadas de acordo com a complexidade, esforço necessário, recursos humanos para a realização das atividades.
-
-Artefatos de saída: Backlog priorizado.
-
-Responsável: Product Owner
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Priorizar histórias \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Backlog de histórias. \\
+        \hline
+        \textbf{Descrição} & As histórias de usuário serão priorizadas de acordo com a complexidade, esforço necessário, recursos humanos para a realização das atividades. \\
+        \hline
+        \textbf{Artefato de saída} & Backlog priorizado. \\
+        \hline
+        \textbf{Responsável} & Product Owner \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \subsubsection{Subprocesso Planejar sprint}
 
@@ -364,34 +514,62 @@ Nessa seção serão definidas as atividades necessárias para projetar uma spri
     \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoPlanejar.eps}
 \end{figure}
 
-Avaliar histórias a serem implementadas
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Avaliar histórias a serem implementadas \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Backlog priorizado. \\
+        \hline
+        \textbf{Descrição} & Nesta atividade, o time e o Product Owner decidirão quais as histórias que serão implementadas durante a sprint. Essa atividade será realizada em paralelo com a atividade “planning poker”. \\
+        \hline
+        \textbf{Artefato de saída} & Kanban de histórias. \\
+        \hline
+        \textbf{Responsável} & Time \\
+        \hline
+    \end{tabular}
+\end{table}
 
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Executar planning poker \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Backlog priorizado. \\
+        \hline
+        \textbf{Descrição} & Essa atividade descreve a pontuação em forma de um “jogo de poker” em que o time pontua a história de acordo com o nível de dificuldade para implementá-la. Essa pontuação só tem números da sequência de Fibonacci. \\
+        \hline
+        \textbf{Artefato de saída} & Kanban de histórias. \\
+        \hline
+        \textbf{Responsável} & Time \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato(s) de entrada: Backlog priorizado.
-
-Descrição: Nesta atividade, o time e o Product Owner decidirão quais as histórias que serão implementadas durante a sprint. Essa atividade será realizada em paralelo com a atividade “planning poker”.
-
-Artefato de saída: Kanban de histórias.
-
-Responsável: Time
-Executar planning poker
-
-Artefato(s) de entrada: Backlog priorizado.
-
-Descrição: Essa atividade descreve a pontuação em forma de um “jogo de poker” em que o time pontua a história de acordo com o nível de dificuldade para implementá-la. Essa pontuação só tem números da sequência de Fibonacci.
-
-Artefato de saída: Kanban de histórias.
-
-Responsável: Time
-Elaborar kanban
-
-Artefato(s) de entrada: Backlog priorizado
-
-Descrição: Definir quais são as histórias de usuário que serão utilizadas no backlog de histórias para serem implementadas na sprint.
-
-Artefatos de saída: Kanban de histórias.
-
-Responsável: Time
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Elaborar kanban \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Backlog priorizado \\
+        \hline
+        \textbf{Descrição} & Definir quais são as histórias de usuário que serão utilizadas no backlog de histórias para serem implementadas na sprint. \\
+        \hline
+        \textbf{Artefato de saída} & Kanban de histórias. \\
+        \hline
+        \textbf{Responsável} & Time \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \subsubsection{Executar Sprint}
 
@@ -404,34 +582,62 @@ Nessa seção será definida as atividades necessárias durante a realização d
     \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoExecutar.eps}
 \end{figure}
 
-Desenvolver histórias
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Desenvolver histórias \\
+        \hline
+        \textbf{Artefato(s) de entrada} & História de usuário \\
+        \hline
+        \textbf{Descrição} & Consiste na implementação das funcionalidades, requisitos não funcionais, ou seja, produzir o software pela definição na história de usuário ou habilitadora. \\
+        \hline
+        \textbf{Artefato de saída} & Código fonte \\
+        \hline
+        \textbf{Responsável} & Time \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato(s) de entrada: História de usuário
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Fazer retrospectiva e revisão \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Gráfico burndown. \\
+        \hline
+        \textbf{Descrição} & Consiste em analisar a qualidade do trabalho feito, definindo pontos bons e ruins da equipe. \\
+        \hline
+        \textbf{Artefato de saída} & Resumo retrospectiva. \\
+        \hline
+        \textbf{Responsável} & Time \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Descrição: Consiste na implementação das funcionalidades, requisitos não funcionais, ou seja, produzir o software pela definição na história de usuário ou habilitadora.
-
-Artefato de saída: Código fonte
-
-Responsável: Time
-Fazer retrospectiva e revisão
-
-Artefato(s) de entrada: Gráfico burndown.
-
-Descrição: Consiste em analisar a qualidade do trabalho feito, definindo pontos bons e ruins da equipe.
-
-Artefato de saída: Resumo retrospectiva.
-
-Responsável: Time
-Desenhar burndown
-
-Artefato(s) de entrada: Kanban de histórias.
-
-Descrição: Consiste em gerar um gráfico com os pontos executados durante uma sprint.
-
-Artefato de saída: Gráfico burndown.
-
-Responsável: Scrum Master
-
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Desenhar burndown \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Kanban de histórias. \\
+        \hline
+        \textbf{Descrição} & Consiste em gerar um gráfico com os pontos executados durante uma sprint. \\
+        \hline
+        \textbf{Artefato de saída} & Gráfico burndown. \\
+        \hline
+        \textbf{Responsável} & Scrum Master \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \subsection{Subprocesso Gerência de Requisitos}
 
@@ -446,49 +652,98 @@ Como a equipe de desenvolvimento de requisitos é pequena, todos os envolvidos p
     \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoGerencia.eps}
 \end{figure}
 
-Identificar mudanças 
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Identificar mudanças \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Não validação dos artefatos. \\
+        \hline
+        \textbf{Descrição} & Essa atividade é responsável por identificar as mudanças necessárias quando algum artefato não foi validado. \\
+        \hline
+        \textbf{Artefato de saída} & Documento de mudança. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato(s) de entrada: Não validação dos artefatos.
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Rastrear mudanças \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Documento de mudança. \\
+        \hline
+        \textbf{Descrição} & Essa atividade é responsável por identificar onde as mudanças serão aplicadas e caso se a mudança vier de um nível anterior, mandar essa análise para a gerência do nível necessário. \\
+        \hline
+        \textbf{Artefato de saída} & Documento de mudança rastreado. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Descrição: Essa atividade é responsável por identificar as mudanças necessárias quando algum artefato não foi validado.
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Analisar risco da mudança \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Documento de mudança rastreado. \\
+        \hline
+        \textbf{Descrição} & Essa atividade é responsável por analisar os impactos das mudanças para que seja possível saber se as mudanças são ou não viáveis. \\
+        \hline
+        \textbf{Artefato de saída} & Documento de mudança com riscos. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato de saída: Documento de mudança.
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Validar os riscos com cliente \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Documento de mudança com riscos. \\
+        \hline
+        \textbf{Descrição} & Essa atividade será realizada com o Product Owner para que ele possa validar as mudanças levando em consideração os riscos das mudanças e definir se serão implantadas. \\
+        \hline
+        \textbf{Artefato de saída} & Documento de mudança validado. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Responsável: Product manager
-Rastrear mudanças
+\begin{table}[h]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Formato de descrição das atividades}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Nome} & Aplicar mudanças \\
+        \hline
+        \textbf{Artefato(s) de entrada} & Documento de mudança validado. \\
+        \hline
+        \textbf{Descrição} & Caso se as mudanças apresentarem um benefício maior do que o risco, essa atividade será responsável por aplicá-las em seus devidos lugares. \\
+        \hline
+        \textbf{Artefato de saída} & Mudanças realizadas. \\
+        \hline
+        \textbf{Responsável} & Product manager \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Artefato(s) de entrada: Documento de mudança.
-
-Descrição: Essa atividade é responsável por identificar onde as mudanças serão aplicadas e caso se a mudança vier de um nível anterior, mandar essa análise para a gerência do nível necessário.
-
-Artefato de saída: Documento de mudança rastreado.
-
-Responsável: Product manager
-Analisar risco da mudança
-
-Artefato(s) de entrada: Documento de mudança rastreado.
-
-Descrição: Essa atividade é responsável por analisar os impactos das mudanças para que seja possível saber se as mudanças são ou não viáveis.
-
-Artefato de saída: Documento de mudança com riscos.
-
-Responsável: Product manager
-
-Validar os riscos com cliente
-
-Artefato(s) de entrada: Documento de mudança com riscos. 
-
-Descrição: Essa atividade será realizada com o Product Owner para que ele possa validar as mudanças levando em consideração os riscos das mudanças e definir se serão implantadas.
-
-Artefato de saída: Documento de mudança validado.
-
-Responsável: Product manager
-Aplicar mudanças
-
-Artefato(s) de entrada: Documento de mudança validado.
-
-Descrição: Caso se as mudanças apresentarem um benefício maior do que o risco, essa atividade será responsável por aplicá-las em seus devidos lugares.
-
-Artefato de saída: Mudanças realizadas.
-
-Responsável: Product manager
