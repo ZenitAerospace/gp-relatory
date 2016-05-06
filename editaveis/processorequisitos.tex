@@ -1,0 +1,457 @@
+\chapter[Processo de engenharia de requisitos]{Processo de engenharia de requisitos}
+
+A figura \ref{processo} é o modelo proposto baseado no Scalade Agile Framework e nas atividades 5 atividades da engenharia de requisitos: Elicitar; Documentar; Analisar e negociar; Verificar e validar; Gerenciar requisitos. As atividades relacionadas a elicitação então, tratam da especificação em forma de artefato do que o cliente precisa. A documentação é a própria produção dos artefatos. A análise e negociação é a atividade que avalia e negocia o espoco do sistema e sua viabilidade. A verificação e validação é para identificar possíveis inconsistências e incoerências com os requisitos elicitados. O gerenciamento dos requisitos é atividade que acompanha a vida dos requisitos ao longo do desenvolvimento do projeto. Assim, todas essas atividades serão atendidas no modelo proposto.
+
+\section{Papéis do Processo}
+\begin{description}
+\item \textbf{Product Owner}
+
+As atividades que o Product Owner (PO) é responsável segundo \cite{leffingwell2011} são:
+\begin{itemize}
+    \item Trabalhar em harmonia com o Product Manager;
+    \item Definir objetivos das sprints;
+    \item Manter o backlog da equipe;
+    \item Definir prioridades baseados no valor agregado ao usuário;
+    \item Elaborar e validar as histórias;
+    \item Participar do planejamento e validação da sprint.
+\end{itemize}
+O papel de PO será desempenhado pelo gestor de pessoas da Zenit Aerospace: Caio
+
+\item \textbf{Product Manager}
+
+O Product Manager (PM) tem as mesmas responsabilidades que o Product Owner, mas com uma diferença é que ele trata a solução por completo. Algumas responsabilidades a mais da do Product Owner são \cite{leffingwell2011}:
+\begin{itemize}
+    \item Priorizar features;
+    \item Manter o Roadmap;
+    \item Gerenciar o conteúdo da release;
+    \item Priorizar e manter o Backlog do Portfólio;
+\end{itemize}
+
+O integrante de requisitos que desempenhará o papel de PM será o Eduardo Nunes da equipe da disciplina de requisitos.
+
+\item \textbf{Scrum master}
+
+O Scrum Master é responsável por garantir que o as práticas e regras do Scrum sejam entendidas e aplicadas. Tendo o papel de um servo-líder para a equipe Scrum \cite{agileManifest}. O integrante de requisitos que desempenhará o papel de Scrum Master será o Marcelo Ferreira.
+
+O Scrum Master tem como responsabilidades (1):
+\begin{itemize}
+    \item Eliminar impedimentos;
+    \item Facilitar o progresso da equipe para alcançar a meta;
+    \item Reforçar as regras do Scrum sobre a Equipe;
+\end{itemize}
+
+\item \textbf{Equipe de Desenvolvimento(time)}
+
+A equipe de desenvolvimento consiste de profissionais que realizam o trabalho de entregar uma versão usável que potencialmente incrementa o produto “Pronto” ao final de cada Sprint (1). Esse papel será desempenhado por todos os integrantes de requisitos.
+
+O papel de Architect/Engineering system, será atribuído ao time, devido o tamanho do projeto e quantidade de membros na equipe de engenharia de requisitos. Esse papel possui a visão geral sobre a arquitetura do sistema e o projeto da solução. Participam das definições de alto nível dos requisitos não funcionais, auxiliam os times a alinharem a visão técnica do desenvolvimento com o documento de visão e roadmap, são responsáveis pela \cite{safe}:
+\begin{itemize}
+    \item Determinam a tecnologia a ser usada no desenvolvimento do sistema;
+    \item Determinação da estrutura geral, componentes e serviços do sistema;
+    \item Produzem as histórias habilitadoras;
+    \item Critérios de desempenho do sistema como um todo.
+\end{itemize}
+\end{description}
+\section{Artefatos}
+
+Nessa seção será abordado os artefatos que serão utilizados no sistema analisado, nos três níveis portfólio, programa, e time, segundo o framework SAFe:
+
+\subsection{Portfólio}
+\begin{itemize}
+    \item \textbf{Temas estratégicos:} Relacionam os objetivos do negócio do cliente com as estratégias de negócios deles. Fornecem o contexto do negócio para as decisões de investimento no Épicos \cite{safe}.
+    \item \textbf{Épicos:} São o segundo nível mais alto de abstração dos requisitos, grandes containes com os valores a serem entregues ao cliente. Este pode conter épicos de negócios e habilitadores. Os épicos habilitadores representam as decisões arquiteturais e os de negócio as funcionalidades \cite{safe}.
+    \item \textbf{Backlog de épicos:} Artefato para alocar todos os épicos que foram levantados com os clientes e ainda serão produzidos. Assim como contém a prioridade dos épicos que foram aprovados para implementação \cite{safe}.
+\end{itemize}
+
+\subsection{Programa}
+\begin{itemize}
+    \item \textbf{ Features:} São serviços que tem como propósito suprir alguma necessidade dos stakeholders. Agregam valor para o usuário e são realizadas durante as releases \cite{leffingwell2011}. Existem dois tipos de features no framework adotado, os de negócio, que foi descrito acima, e os enables que são aqueles que descrevem como o sistema irá fazer certa funcionalidade. Ele engloba requisitos de desempenho, de interface externa do sistema, restrições de projeto e atributos da qualidade \cite{safe}.
+    \item \textbf{ Roadmap do programa:} Representa os entregáveis próximos na linha do tempo, ou seja, as features são dispostas em sequência de acordo com a priorização feita. Ele trás visibilidade as features que serão entregues a cada release \cite{safe}.
+    \item \textbf{ Kanban do programa:} Consiste em uma representação visual das features do estado de execução delas como feito, fazendo e a fazer ( done, doing, to do) \cite{leffingwell2011}.
+    \item \textbf{ Backlog do programa:} Representa um conjunto de features que serão implementadas para o sistema, estas já estão pontuadas de acordo com sua dificuldade técnica \cite{safe}.
+    \item \textbf{ Visão:} É um conjunto de características que definem quais serão os benefícios que serão entregue para o cliente com a entrega do sistema. Engloba a intenção estratégica do produto, o problema da aplicação, as características e as definições dos requisitos não funcionais \cite{leffingwell2011}. 
+\end{itemize}
+\subsection{Time}
+\begin{itemize}
+    \item \textbf{ Histórias:} Breve descrição de uma funcionalidade que foi discutida \cite{leffingwell}. Histórias de usuário não são requisitos e sim pequenas pedaços da funcionalidade de um software descritos na linguagem natural de um usuário \cite{safe}. Neste framework, as histórias são tratadas como de usuário e enables.
+    \item \textbf{ Backlog de história:} Representa conjunto de histórias priorizadas de acordo com os interesses do cliente e restrições entre histórias, que serão implementadas para o sistema durante uma sprint \cite{safe}.
+    \item \textbf{ Historias pontuadas:} São histórias com a pontuação referente ao nível de dificuldade, complexidade e esforço para sua implementação.
+    \item \textbf{ Resumo retrospectiva:} É um resumo de todos os tópicos discutidos na retrospectiva da sprint. Serve para avaliar a forma que que tem que ser melhorado para a próxima sprint.
+    \item \textbf{ Kanban de time:} Consiste em uma representação visual das histórias de usuários que estão realizadas, as que estão sendo realizadas e as que não começaram a ser realizadas \cite{leffingwell}.
+    \item \textbf{ Atividade e seus artefatos envolvidos:} Nessa seção será abordado os artefatos que serão utilizados no sistema nos três níveis portfólio, programa, e time, analisando os artefatos que precisam ser gerados, citados na seção anterior.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \caption{Processo de requisitos}
+    \label{processo}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processo.eps}
+\end{figure}
+
+
+
+
+\section{Portfólio}
+
+Neste nível do SAFe, os requisitos são tratados de forma mais abstrata e menos detalhada. Identifica-se as necessidades e o problema da empresa. Assim como os interesses de investimentos dela, representados pelos temas estratégicos.
+\subsection{Subprocesso identificar interesses da empresa}
+
+Este sub processo, imagem \ref{processoInteresses} representa um conjunto de atividades voltadas ao levantamento dos interesses de investimento do cliente para sua empresa. Define-se os temas estratégicos da empresa.
+
+\begin{figure}[H]
+    \centering
+    \caption{Identificar interesses da empresa}
+    \label{processoInteresses}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoInteresses.eps}
+\end{figure}
+
+
+Elicitar temas estratégicos
+
+Artefato(s) de entrada: Contexto do negócio.
+
+Descrição: Reunião com o cliente utilizando técnicas de elicitação de requisitos para identificar as oportunidades de negócio.
+
+Artefato de saída: Temas estratégicos elicitados
+
+Responsável: Product manager
+Validar temas estratégicos
+
+Artefato(s) de entrada: Temas estratégicos
+
+Descrição: Validar com o cliente se os temas estratégicos correspondem aos interesses de investimento da empresa naquele momento.
+
+Artefato de saída: Temas estratégicos validados
+
+Responsável: Product manager
+
+\subsection{ Subprocesso identificar valores para empresa}
+
+O produto a ser desenvolvido, em um nível mais abstrato, define quais os valores que esse entregará ao cliente, empresa. Assim sendo, este subprocesso trata de identificar e priorizar os itens que proverão valores a empresa, representados pelos artefatos épicos.
+
+\begin{figure}[H]
+    \centering
+    \caption{Identificar valores da empresa}
+    \label{processoValores}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoValores.eps}
+\end{figure}
+
+Elicitar épicos
+
+Artefato(s) de entrada: Temas estratégicos
+
+Descrição: Reunião com o cliente utilizando técnicas de elicitação de requisitos para identificar os épicos de negócios e habilitadores.
+
+Artefato de saída: Épicos
+
+Responsável: Product manager
+Analisar viabilidade de épicos
+
+Artefato(s) de entrada: Épicos
+
+Descrição: Determinar se os épicos, tanto de negócio quanto habilitadores, são viáveis com base na tecnologia, tempo e custo. Se necessário dividir em mais épicos.
+
+Artefato de saída: Épicos analisados
+
+Responsável: Product manager
+Verificar e validar épicos
+
+Artefato(s) de entrada: Épicos analisados
+
+Descrição: Verificar com o cliente se os épicos analisados correspondem aos itens que o cliente deseja.
+
+Artefato de saída: Épicos verificados e validados.
+
+Responsável: Product Owner
+
+Criar backlog de épicos
+
+Artefato(s) de entrada: Épicos verificados e validados
+
+Descrição: Criar o backlog com os épicos de acordo com as priorizações estabelecidas pela atividade de priorizar épicos.
+
+Artefato de saída: Backlog de épicos.
+
+Responsável: Product owner
+Priorizar épicos
+
+Artefato(s) de entrada: Backlog de épicos
+
+Descrição: Reunir e classificar os épicos de acordo com sua importância para os interesses de negócio do cliente. Assim como definir as relações de dependência entre eles.
+
+Artefato de saída: Épicos priorizados.
+
+Responsável: Product owner
+
+\section{Programa}
+
+\subsection{Subprocesso desenvolver programa}
+
+O nível de programa é o onde as features são definidas, avaliadas e documentadas. O conjunto de atividades a seguir permitem que sejam elaborado o conjunto de features que representam as várias características do produto final de acordo com um épico a ser entregue para o cliente.
+
+\begin{figure}[H]
+    \centering
+    \caption{Desenvolver programa}
+    \label{processoPrograma}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoPrograma.eps}
+\end{figure}
+
+
+
+
+Elicitar features
+
+Artefato(s) de entrada: Épico priorizados.
+
+Descrição: Essa atividade é responsável pelo levantamento das features de negócio e habilitadores que serão necessárias para realização de cada release.
+
+Artefato de saída: Features
+
+Responsável: Product manager
+
+Analisar features
+
+Artefato(s) de entrada: Features
+
+Descrição: Analisar as features elaboradas, e estimar o escopo das features determinar sua viabilidade técnica e averiguar a possibilidade de dividir em itens menores para o backlog.
+
+Artefato de saída: Features analisadas
+
+Responsável: Product manager
+
+Verificar e Validar features
+
+Artefato(s) de entrada: Features analisadas
+
+Descrição: Verificar e validar com o Product onwer as features que foram analisadas se elas correspondem as necessidades do cliente, empresa.
+
+Artefato de saída: Features validadas
+
+Responsável: Product Manager
+Montar backlog de features
+
+Artefato(s) de entrada: Features validadas.
+
+Descrição: Agrupar todas as features validadas com o cliente que ainda não foram implementadas em um único documento, a fim de se ter visão do que será produzido para o produto.
+
+Artefato de saída: Backlog de features.
+
+Responsável: Product manager
+Priorizar features
+
+Artefato(s) de entrada: Backlog de features;
+
+Descrição: Classificar as features de acordo com sua importância para o projeto, ou seja, classifica-se pelo valor entregue, redução de risco, oportunidade de habilitar um valor.
+
+Artefato de saída: Roadmap de features.
+
+Responsável: Product manager
+Elaborar visão
+
+Artefato(s) de entrada: Roadmap de features.
+
+Descrição: Escreve o documento de visão do projeto com as decisões tomadas na etapa de desenvolver do programa.
+
+Artefato de saída: Documento de visão.
+
+Responsável: Product manager
+
+Elaborar Kanban de features
+
+Artefato(s) de entrada: Roadmap de features.
+
+Descrição: Elabora o Kaban de features com as decisões tomadas na etapa de desenvolver do programa.
+
+Artefato de saída: Kanban de features.
+
+Responsável: Product manager
+\section{Time}
+\subsection{ Subprocesso identificar histórias}
+
+Nesta etapa do processo, as features definidas serão detalhadas na forma de histórias de usuário elicitados com os usuários. A fim de prover um conjunto de histórias priorizadas para a implementação.
+
+\begin{figure}[H]
+    \centering
+    \caption{Identificar histórias}
+    \label{processoHistorias}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoHistorias.eps}
+\end{figure}
+
+
+Preparar para elicitação
+
+Entrada: Features
+
+Descrição : Identificar técnica utilizando como base nas features definidas na etapas anteriores, definindo a pauta da reunião em questão.
+
+Saída: Pauta da reunião
+
+Aplicar técnica de elicitação de requisitos
+
+Definir critério de aceitação
+
+Artefato(s) de entrada: Historias elicitadas.
+
+Descrição: Consiste em definir quais são os critérios que devem ser seguidos para que a histórias de usuário sejam aceitas como completadas.
+
+Artefatos de saída: Historias de usuário com critérios de aceitação.
+
+Responsável: Time
+Verificar e Validar histórias
+
+Artefato(s) de entrada: Historias de usuários com critérios de aceitação.
+
+Descrição: Consiste em avaliar se as histórias estão sendo condizentes com a problemática, ou seja, se representam bem as pequenas partes da funcionalidades. E depois da validação, documentá-las em um backlog de histórias.
+
+Artefatos de saída: Backlog de histórias.
+
+Responsável: Product Owner
+
+Priorizar histórias
+
+Artefato(s) de entrada: Backlog de histórias.
+
+Descrição: As histórias de usuário serão priorizadas de acordo com a complexidade, esforço necessário, recursos humanos para a realização das atividades.
+
+Artefatos de saída: Backlog priorizado.
+
+Responsável: Product Owner
+
+\subsection{Subprocesso Planejar sprint}
+
+Nessa seção serão definidas as atividades necessárias para projetar uma sprint.
+\begin{figure}[H]
+    \centering
+    \caption{Planejar sprint}
+    \label{processoPlanejar}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoPlanejar.eps}
+\end{figure}
+
+Avaliar histórias a serem implementadas
+
+
+Artefato(s) de entrada: Backlog priorizado.
+
+Descrição: Nesta atividade, o time e o Product Owner decidirão quais as histórias que serão implementadas durante a sprint. Essa atividade será realizada em paralelo com a atividade “planning poker”.
+
+Artefato de saída: Kanban de histórias.
+
+Responsável: Time
+Executar planning poker
+
+Artefato(s) de entrada: Backlog priorizado.
+
+Descrição: Essa atividade descreve a pontuação em forma de um “jogo de poker” em que o time pontua a história de acordo com o nível de dificuldade para implementá-la. Essa pontuação só tem números da sequência de Fibonacci.
+
+Artefato de saída: Kanban de histórias.
+
+Responsável: Time
+Elaborar kanban
+
+Artefato(s) de entrada: Backlog priorizado
+
+Descrição: Definir quais são as histórias de usuário que serão utilizadas no backlog de histórias para serem implementadas na sprint.
+
+Artefatos de saída: Kanban de histórias.
+
+Responsável: Time
+
+\subsection{Executar Sprint}
+
+Nessa seção será definida as atividades necessárias durante a realização de uma sprint.
+
+\begin{figure}[H]
+    \centering
+    \caption{Executar sprint}
+    \label{processoExecutar}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoExecutar.eps}
+\end{figure}
+
+Desenvolver histórias
+
+Artefato(s) de entrada: História de usuário
+
+Descrição: Consiste na implementação das funcionalidades, requisitos não funcionais, ou seja, produzir o software pela definição na história de usuário ou habilitadora.
+
+Artefato de saída: Código fonte
+
+Responsável: Time
+Fazer retrospectiva e revisão
+
+Artefato(s) de entrada: Gráfico burndown.
+
+Descrição: Consiste em analisar a qualidade do trabalho feito, definindo pontos bons e ruins da equipe.
+
+Artefato de saída: Resumo retrospectiva.
+
+Responsável: Time
+Desenhar burndown
+
+Artefato(s) de entrada: Kanban de histórias.
+
+Descrição: Consiste em gerar um gráfico com os pontos executados durante uma sprint.
+
+Artefato de saída: Gráfico burndown.
+
+Responsável: Scrum Master
+
+
+\section{Subprocesso Gerência de Requisitos}
+
+A engenharia de requisitos é um processo que engloba todas as atividades que contribuem para a produção de um documento de requisitos e sua manutenção ao longo do tempo(https://pt.wikipedia.org/wiki/Engenharia\_de\_requisitos ).
+
+Como a equipe de desenvolvimento de requisitos é pequena, todos os envolvidos participarão em todos os níveis: Temas de investimento, Épicos, Features e Histórias. Não há necessidade de definir um subprocesso de gerência para cada um dos níveis, apesar de haver distinção no tratamento da gerência de requisitos em cada um deles, pois mudanças nos épicos, influenciarão features e histórias de usuário, enquanto que mudanças nas histórias influenciarão principalmente outras histórias. Ainda assim, as atividades descritas neste subprocesso são capazes de atingir as necessidades de gestão em cada um dos três níveis.
+
+\begin{figure}[H]
+    \centering
+    \caption{Gerencia de requisitos}
+    \label{processoGerencia}
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/processoGerencia.eps}
+\end{figure}
+
+Identificar mudanças 
+
+Artefato(s) de entrada: Não validação dos artefatos.
+
+Descrição: Essa atividade é responsável por identificar as mudanças necessárias quando algum artefato não foi validado.
+
+Artefato de saída: Documento de mudança.
+
+Responsável: Product manager
+Rastrear mudanças
+
+Artefato(s) de entrada: Documento de mudança.
+
+Descrição: Essa atividade é responsável por identificar onde as mudanças serão aplicadas e caso se a mudança vier de um nível anterior, mandar essa análise para a gerência do nível necessário.
+
+Artefato de saída: Documento de mudança rastreado.
+
+Responsável: Product manager
+Analisar risco da mudança
+
+Artefato(s) de entrada: Documento de mudança rastreado.
+
+Descrição: Essa atividade é responsável por analisar os impactos das mudanças para que seja possível saber se as mudanças são ou não viáveis.
+
+Artefato de saída: Documento de mudança com riscos.
+
+Responsável: Product manager
+
+Validar os riscos com cliente
+
+Artefato(s) de entrada: Documento de mudança com riscos. 
+
+Descrição: Essa atividade será realizada com o Product Owner para que ele possa validar as mudanças levando em consideração os riscos das mudanças e definir se serão implantadas.
+
+Artefato de saída: Documento de mudança validado.
+
+Responsável: Product manager
+Aplicar mudanças
+
+Artefato(s) de entrada: Documento de mudança validado.
+
+Descrição: Caso se as mudanças apresentarem um benefício maior do que o risco, essa atividade será responsável por aplicá-las em seus devidos lugares.
+
+Artefato de saída: Mudanças realizadas.
+
+Responsável: Product manager
