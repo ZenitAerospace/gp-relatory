@@ -21,7 +21,7 @@ EDITAVEIS_SOURCES = informacoes.tex \
 					textoepostexto.tex \
 					apendices.tex anexos.tex \
                     context.tex planejamento.tex processo.tex \
-                    qualidade.tex elicitacao.tex
+                    qualidade.tex elicitacao.tex gerenciarequisitos.tex
 
 EDITAVEIS_FILES = $(addprefix $(EDITAVEIS_DIR)/, $(EDITAVEIS_SOURCES))
 
