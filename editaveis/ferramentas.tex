@@ -92,13 +92,53 @@ A ferramenta escolhida
 
 Existem duas classificações importantes para a escolha de uma ferramenta de gerenciamento de requisitos, requisitos de desenvolvedores e requisitos de projetos administradores \cite{hoffmann2004}. Os requisitos de projetos administradores são para projetos de larga escala, e como o projeto em questão é um projeto de pequena e média escala, logo só serão tratados os requisitos de desenvolvedores.
 
-Foram analisadas 3 ferramentas: Jira, o Innoslate e o OSRMT. De acordo os critérios abaixo definidos pela equipe baseado no Hoffmann (2004), a ferramenta escolhida foi o Jira por atender melhor a eles.
+\subsubsection{Critérios e metodologia de análise}
+
+Para a escolha da ferramenta, foram escolhidos critérios baseados no Hoffmann (2004) e critérios elaborados pela equipe para se adequarem as necessidades da disciplina de engenharia de requisitos.
+Para cada critério especificado, foi adotado um grau de prioridade para classificar a importância do critério para a escolha da ferramenta. Assim, é definido: 
+\begin{description}
+    \item '+++' - para alta prioridade; 
+    \item '++' - média prioridade; 
+    \item '+' - baixa prioridade;
+\end{description}
+
+A contagem para determinar a escolha da ferramenta, será definido pela soma de '+' que a ferramenta acumulou após a análise de todos os critérios estabelecidos.
 
 \begin{itemize}
-    \item \textbf{A abordagem adotada:} a ferramenta deve ter suporte para a abordagem ágil, ou seja, dando suporte a Histórias de Usuário; Priorização de atividades; Backlog dentre outras atividades que o processo demanda relacionado a abordagem ágil; O Jira ofere suporte a abordagem ágil a partir de um plugin o GreenHooper ou o RMsis, ambos se adequam as nossas necessidades para a gerencia das atividades que serão realizadas. 
-    \item \textbf{Matriz de Rastreabilidade:} a ferramenta deve dar suporte a rastreabilidade dos requisitos às suas origens e os rastreamento durante todo o ciclo de vida do projeto. A ferramenta deve permitir a rastreabilidade através de links entre os requisitos, devendo ser possível seguir através desses links diretamente em ambos as direções \cite{hoffmann2004}. O Jira oferece suporte a matriz de rastreabilidade através de plugin um exemplo é o Traceability Matrix and Link Graph.
-    \item \textbf{Acesso Web:} a ferramenta deve dar suporte a uma interface web para que não seja necessário instalar um aplicativo no computador para cada usuário que fará uso dela \cite{hoffmann2004}. Devendo também ter uma interface intuitiva e fácil de se manusear. O Jira oferece interface web intuitiva e fácil de utilizar.
-    \item \textbf{Gestão de mudanças e comentário:} a ferramenta deve dar suporte para a gerenciamento de mudanças com base nas atividades desenvolvidas para lidar com essas modificações. Assim, com suporte ao gerenciamento de mudanças possibilita a redução de erros de forma significativa \cite{hoffmann2004}. O Jira fornecer formas de assegurar que mudanças realizadas sejam controladas. Oferecendo a visibilidade de cada mudança efetuada no software, qual foi o motivo que gerou a mudança, quem executou dentre outras.
-    \item \textbf{Geração de documentação das atividades:} a ferramenta deve dar suporte para a documentação de atividades realizadas e  prover a possibilidade de outros formatos de arquivos para programas externos a ferramenta.  Jira fornece geração de documentos e exportação para WORD, PDF, XML e HTML \cite{jira2016}.
+    \item \textbf{A abordagem adotada(+++):} a ferramenta deve ter suporte para a abordagem ágil, ou seja, dando suporte a Histórias de Usuário; Priorização de atividades; Backlog dentre outras atividades que o processo demanda relacionado a abordagem ágil;     
+    \item \textbf{Matriz de Rastreabilidade(+++):} a ferramenta deve dar suporte a rastreabilidade dos requisitos às suas origens e os rastreamento durante todo o ciclo de vida do projeto. A ferramenta deve permitir a rastreabilidade através de links entre os requisitos, devendo ser possível seguir através desses links diretamente em ambos as direções \cite{hoffmann2004}.     
+    \item \textbf{Acesso Web(+):} a ferramenta deve dar suporte a uma interface web para que não seja necessário instalar um aplicativo no computador para cada usuário que fará uso dela \cite{hoffmann2004}. Devendo também ter uma interface intuitiva e fácil de se manusear. O Jira oferece interface web intuitiva e fácil de utilizar.
+    \item \textbf{Gestão de mudanças(++):} a ferramenta deve dar suporte para a gerenciamento de mudanças com base nas atividades desenvolvidas para lidar com essas modificações. Assim, com suporte ao gerenciamento de mudanças possibilita a redução de erros de forma significativa \cite{hoffmann2004}.
+    \item \textbf{Comentários(+):} Deve permitir adicionar comentários aos requisitos, estes são para adicionar esclarecimentos necessários aos requisitos que não são simples de entender ou que usem referências externas \cite{hoffmann2004}.
+    \item \textbf{Geração de relatórios(+):} a ferramenta deve dar suporte para a documentação de atividades realizadas e  prover a possibilidade de outros formatos de arquivos para programas externos a ferramenta.
+    \item \textbf{Nível de documentação(+++):} o processo escolhido exige que seja permitido documentar os requisitos em quatro níveis: temas estratégicos, épicos, features e histórias de usuário.
 \end{itemize}
+
+\begin{table}[H]
+    \centering
+    \caption{Comparação entre ferramentas}
+    \begin{tabular}{l|c|c|c}
+        \hline
+        Critérios & ScrumHalf &  Jira & Innoslate \\ [6pt]
+        \hline
+        Abordadem adotada & X & X & X\\
+        \hline
+        Matriz de rastreabilidade & X & X & X \\
+        \hline
+        Acesso Web & X & X & X \\
+        \hline
+        Gestão de mudanças & X & X & X\\
+        \hline
+        Comentários & X & X & X \\
+        \hline
+        Geração de relatórios & X & X & X \\
+        \hline
+        Resultados & 14 & 14 & 14 \\
+    \end{tabular}
+\end{table}
+
+O Jira ofere suporte a abordagem ágil a partir de um plugin o GreenHooper ou o RMsis, ambos se adequam as nossas necessidades para a gerencia das atividades que serão realizadas. 
+O Jira oferece suporte a matriz de rastreabilidade através de plugin um exemplo é o Traceability Matrix and Link Graph.
+O Jira fornecer formas de assegurar que mudanças realizadas sejam controladas. Oferecendo a visibilidade de cada mudança efetuada no software, qual foi o motivo que gerou a mudança, quem executou dentre outras.
+Jira fornece geração de documentos e exportação para WORD, PDF, XML e HTML \cite{jira2016}.
 
