@@ -2,37 +2,28 @@
 
 Ferramentas de gerência de requisitos foram feitas com o intuito de auxiliar os responsáveis pelo desenvolvimento do software a gerir os requisitos. Em geral, essas ferramentas armazenam, coletam, aplicam mudanças, inserem, atualizam e excluem, mantém versões dos requisitos. Apesar disso, as ferramentas possuem divergências entre suas funcionalidades, assim, cada programa atende a realidade de uma empresa \cite{ananias2009}.
 
-\section{Analise das ferramentas}
+\section{Análise das ferramentas}
 
-\subsection{OSRMT}
-O Open Source Requirements Management Tool (OSRMT) é uma ferramenta livre com licença General Public License (GPL) desenvolvida em Java. A ferramenta disponibiliza a possibilidade de se fazer o rastreamento total dos requisitos, tendo também, gerência dos requisitos bem como dos componentes de produtos de trabalho \cite{ananias2009}.
-
-O software em questão tem portabilidade ao Windows, Linux e Mac e possibilita dois modos distintos, servidor e cliente. No modo servidor, o software pode ser utilizado via web, facilitando o contado com os stakeholders, utilizando o Tomcat ou JBoss para prover o acesso. No modo cliente, o software tem que ser instalado em um desktop e configurado com um banco de dados, possibilitando a vantagem de funcionar de modo offline.
+\subsection{RallyDev}
+O RallyDev é uma ferramenta comercial que da suporte a gestão de projetos de desenvolvimento de software. A ferramenta dá suporte a abordagens ágeis podendo se fazer gestão ao nível dos requisitos, dos testes, dos problemas e do planeamento e monitorização \cite{rallyDev}. Algumas das funcionalidades.
 
 A ferramenta oferece:
 \begin{itemize}
-    \item Cadastro de autor, origem e motivo da necessidade de cada requisito;
-    \item Cadastro de casos de uso do requisito, ajudando a prover e avaliar o impacto do requisito no projeto do software;
-    \item Cadastro do status do requisito;
-    \item Cadastro de origem dos requisitos, possibilitando a atribuição de categorias nos requisitos, de modo a auxiliar na derivação dos mesmos;
+    \item Gerar relatórios e obter relatórios de progresso como burndown, velocity.
+    \item Gestão de riscos visualizar blocos, defeitos, marcos e dependências.
+    \item Gerenciamento de teste, integrar o planejamento funcional e testes de regressão.
+    \item Release planning, criar roteiros realistas que permitam equilibrar o escopo, dependências e riscos.
+    \item Rastreamento de lançamento, orientar entrega de recursos e lançamentos para atender às metas de negócios.
+    \item Utilização de plugins 
+    \item Integração com outras ferramentas de requisitos corporativos e Qualidade e software CRM. \newline Exemplos de ferramentas que o RallyDev faz integração: Bugzilla e Visual Studio.
 \end{itemize}
                
-As duas principais tarefas de uma ferramenta de gerenciamento de requisitos de software são: gerenciar mudanças nos requisitos acordados e gerenciar os relacionamentos entre os requisitos \cite{dourado2008} sendo que essas funcionalidades são contempladas pela OSRMT, possibilitando um bom rastreamento e facilitando possíveis mudanças.
-
-Outras funcionalidades:
-\begin{itemize}
-    \item Definição de artefatos e entrada de dados (características, requisitos, código fonte, casos de teste);
-    \item Organização hierárquica e controle de versão dos artefatos;
-    \item Rastreabilidade, gráficos identificando todas as dependências entre os artefatos selecionados para determinar o impacto de mudanças;
-    \item Relatórios padronizados, geração de relatórios em \textit{Portable Document Format} (PDF) e \textit{Hyper Text Markup Language} (HTML);
-    \item Importação/exportação dos artefatos em XML;
-\end{itemize}
 Essas outras funcionalidades reforçam as tarefas de uma ferramenta de gerenciamento de requisitos já mencionadas, além de proporcionar algumas outras facilidades ao usuário.
 \begin{figure}[H]
     \centering
-    \label{osrmt}
-    \caption[Tela do software OSRMT]{Tela do software OSRMT. fonte: \url{http://www.audits.com.br/imagens/blog/osrmt1.jpg}}
-    \includegraphics[keepaspectratio=true,scale=1.0]{figuras/ferramentasosrmt.eps}
+    \label{rallydev}
+    \caption[Tela do software RallyDev]{Tela do software RallyDev. fonte: \url{https://www.rallydev.com/sites/default/files/Feature\%20Summary\%20for\%20Requirements\%20Management_0.gif}}
+    \includegraphics[keepaspectratio=true,scale=0.4]{figuras/rallydev.eps}
 \end{figure}
 
 \subsection{Jira}
@@ -61,32 +52,32 @@ O Jira atende as principais tarefas de uma ferramenta de gerenciamento de requis
     \includegraphics[keepaspectratio=true,scale=0.2]{figuras/jira.eps}
 \end{figure}
 
-\subsection{Innoslate}
+\subsection{Version One}
 
-Innoslate combina engenharia de software, analise de requisito ferramenta de colaboração. É um Model-Based Systems Engeneering software com gerenciamento, análise de requisitos e Departamento de defesa de arquitetura de Framework. Desenvolvido pela SPEC Innovations of Manassas
+Ferramenta desenvolvida para auxiliar na gestão de projetos com processos ágeis, possuindo uma versão comercial e uma versão gratuita por um ano com limitações de número de usuários e recursos.
 
-A ferramenta Oferece \cite{innoslate}:
+A ferramenta oferece \cite{versionOne}:
 \begin{itemize}
-    \item Sugestão automática de numeração na criação de entidade, relações hierárquicas geradas automaticamente, filtrando classe de entidade e rótulos, exibição hierárquica com seções recolhíeis, edição entidade inline, indicadores de análise lacuna.
-    \item O Rastreamento de requisitos diretamente para os elementos funcionais e físicas de um modelo de sistema, documentos de origem, planos de teste e outros requisitos, relacionamentos gerados automaticamente. A visualização da rastreabilidade através da Hierarquia gráfico ou um Rastreabilidade Aranha Diagram.
-    \item Geração automática de um índice de qualidade para os requisitos. atributos de indicadores de qualidade \textit{built-in} melhorar cada requisito.
-    \item Permite visualizar as versões antigas dos documentos criados podendo retorna-los, A toda mudança, atualização, modificação é gravada
-    \item Permite deixar um comentário para membros de sua equipe, ou conversar com eles no chat ao vivo. Permite mantertoda a sua equipe de trabalho sobre a mesma versão dos requisitos do seu projeto com uma cópia centralizada do seu documento de requisitos em Innoslate.
-    \item Criação de relatórios de verificação, validação e rastreabilidade.
+    \item Incorporação dos conceitos relevantes aos princípios ágeis: planeamento de releases e iterações, histórias de utilização, tarefas e burndown;
+    \item Associação de itens do Backlog a objectivos estratégicos de negócio e a grupos de funcionalidades; 
+    \item Suporte a geração automática de histórias ou \textit{defects} a partir de sugestões submetidas pelo cliente; 
+    \item Suporte a matriz de rastreabilidade;
+    \item Integração para APIs, Java, .NET SDK;
+    \item Geração de relatórios;
+    \item Suporte multiplataforma e suporte Web;
+    \item Visualização em gráficos.
 \end{itemize}
 
-Funciona em qualquer dispositivo (Mac, PC, iPad, Android) em qualquer navegador moderno (Google Chrome, Mozilla Firefox, Apple Safari, o Microsoft Internet Explorer 10+) com nenhuma instalação necessária \cite{innoslate}.
 \begin{figure}[H]
     \centering
-    \caption[Tela do software innoslate]{Tela do software innoslate. fonte: \url{https://www.innoslate.com/images/homepage-reqview.png}}
-    \label{innoslateFerramenta}
-    \includegraphics[keepaspectratio=true,scale=0.4]{figuras/innoslate.eps}
+    \caption[Tela do software VersionOne]{Tela do software VersionOne. fonte: \url{https://www.versionone.com/wp-content/uploads/2015/07/limit-your-teams-work-in-process-wip-lg.jpg}}
+    \label{versionOneFerramenta}
+    \includegraphics[keepaspectratio=true,scale=0.8]{figuras/versionOne.eps}
 \end{figure}
 
 \section{Escolha da ferramenta}
     
-Para a escolha da ferramenta, foi elaborado critérios para avaliar as ferramentas selecionadas a base de pesquisas e indicações para garantir que a opção escolhida supre as necessidades do nosso contexto de negócio. A escolha dos critérios são baseadas nas atividades que desempenharemos no nosso processo, porém foi também levado em consideração os critérios \cite{hoffmann2004}:
-A ferramenta escolhida
+Para a escolha da ferramenta, foi elaborado critérios para avaliar as ferramentas selecionadas a base de pesquisas e indicações para garantir que a opção escolhida supre as necessidades do nosso contexto de negócio. A escolha dos critérios são baseadas nas atividades que desempenharemos no nosso processo, porém foi também levado em consideração os critérios \cite{hoffmann2004}.
 
 \subsection{Ferramenta escolhida}
 
@@ -102,7 +93,7 @@ Para cada critério especificado, foi adotado um grau de prioridade para classif
     \item '+' - baixa prioridade;
 \end{description}
 
-A contagem para determinar a escolha da ferramenta, será definido pela soma de '+' que a ferramenta acumulou após a análise de todos os critérios estabelecidos.
+A contagem para determinar a escolha da ferramenta, será definido pela soma de unidades de '+', em que cada um desse representa uma unidade de pontuação, que a ferramenta acumulou após a análise de todos os critérios estabelecidos.
 
 \begin{itemize}
     \item \textbf{A abordagem adotada(+++):} a ferramenta deve ter suporte para a abordagem ágil, ou seja, dando suporte a Histórias de Usuário; Priorização de atividades; Backlog dentre outras atividades que o processo demanda relacionado a abordagem ágil;     
@@ -114,31 +105,31 @@ A contagem para determinar a escolha da ferramenta, será definido pela soma de 
     \item \textbf{Nível de documentação(+++):} o processo escolhido exige que seja permitido documentar os requisitos em quatro níveis: temas estratégicos, épicos, features e histórias de usuário.
 \end{itemize}
 
+A tabela a seguir define se a ferramenta atinge os critérios definidos. É avaliado se a ferramenta alcança as espectativas da equipe em relação ao critério adotado, assim como o grau de satisfação em relação ao comparativo entre as outras ferramentas. Isso quer dizer que, a ferramenta analizada não receber um 'X' indicando alcance do critério, não indica que a ferramenta não tenha tal funcionalidade e sim que não atendeu os critérios totalmente como era esperado.
+
 \begin{table}[H]
     \centering
+    \label{comparaFerramentas}
     \caption{Comparação entre ferramentas}
     \begin{tabular}{l|c|c|c}
         \hline
-        Critérios & ScrumHalf &  Jira & Innoslate \\ [6pt]
+        Critérios & Jira &  RallyDev & VersionOne \\ [6pt]
         \hline
-        Abordadem adotada & X & X & X\\
+        Abordadem adotada(+++) & X & X & X\\
         \hline
-        Matriz de rastreabilidade & X & X & X \\
+        Matriz de rastreabilidade(+++) & X & - & X \\
         \hline
-        Acesso Web & X & X & X \\
+        Acesso Web(+) & X & X & X \\
         \hline
-        Gestão de mudanças & X & X & X\\
+        Gestão de mudanças(++) & X & - & X\\
         \hline
-        Comentários & X & X & X \\
+        Comentários(+) & X & - & X \\
         \hline
-        Geração de relatórios & X & X & X \\
+        Geração de relatórios(+) & X & X & X \\
         \hline
-        Resultados & 14 & 14 & 14 \\
+        Soma dos pontos & 14 & 5 & 14 \\
+        \hline
     \end{tabular}
 \end{table}
 
-O Jira ofere suporte a abordagem ágil a partir de um plugin o GreenHooper ou o RMsis, ambos se adequam as nossas necessidades para a gerencia das atividades que serão realizadas. 
-O Jira oferece suporte a matriz de rastreabilidade através de plugin um exemplo é o Traceability Matrix and Link Graph.
-O Jira fornecer formas de assegurar que mudanças realizadas sejam controladas. Oferecendo a visibilidade de cada mudança efetuada no software, qual foi o motivo que gerou a mudança, quem executou dentre outras.
-Jira fornece geração de documentos e exportação para WORD, PDF, XML e HTML \cite{jira2016}.
-
+Após a visualização do resultado na tabela contendo os critérios utilizados como base para a escolha da ferramenta. Constatou-se um empate entre as ferramentas Jira e VersionOne. Utilizando como critério de desempate o quesito a interface gráfica do software a ferramenta que se destacou foi o Jira. Portanto, a ferramenta que será utilizada para a gerência de requisitos é o Jira.
