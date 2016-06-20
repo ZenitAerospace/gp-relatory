@@ -20,6 +20,7 @@ EDITAVEIS_SOURCES = informacoes.tex \
 					abreviaturas.tex simbolos.tex introducao.tex \
                     execucaodoprocesso.tex \
                     execucaoportfolio.tex \
+                    execucaoprograma.tex \
                     consideracoes.tex 
 					
 

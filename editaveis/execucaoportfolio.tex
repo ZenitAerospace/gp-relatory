@@ -1,121 +1,114 @@
-\chapter[Metodologia e Processo]{Metodologia e processo}
-\section{Metodologia de desenvolvimento}
-Com o passar do tempo, a medida que a complexidade do desenvolvimento de software aumentou, a necessidade de se criar metodologias de desenvolvimento de software para melhorar a qualidade do produto final também cresceu. Metodologias de desenvolvimento de software, fornecem uma abordagem sistemática ao desenvolvimento de software, e é papel do engenheiro escolher a que melhor se adequá ao projeto, pois essa escolha determinará o sucesso ou não do mesmo \cite{sweebok}. Tendo visto essa ideologia e as necessidades do gestor de pessoas da empresa Zenit, nesse tópico será avaliado qual a melhor abordagem para o projeto.
-\subsection{Análise de metodologia com a problemática}
-A natureza de desenvolvimento de software segundo \cite{boehm2004}, se dar por meio da analise de quatro principais característica de projeto. São elas:
-\begin{itemize}
-    \item \textbf{Características da aplicação} – incluem objetivos primários do projeto, tamanho do projeto;
-    \item \textbf{Características do gerenciamento} – incluem relações com o cliente, comunicação no projeto e planejamento e controle;
-    \item \textbf{Características técnicas} – incluem abordagens à definição de requisitos, desenvolvimento e teste;
-    \item \textbf{Características das pessoas} – incluem características do cliente, dos desenvolvedores e da cultura da organização.
-\end{itemize}
-\subsubsection{Caracteristicas da aplicação}
-\begin{description}
-\item \textbf{Objetivos primários}
-
-O princípio do manifesto ágil diz que mudanças nos requisitos são bem vindas a qualquer fase do desenvolvimento do software, a interação com o usuário propicia essas mudanças constantes com requisitos instáveis \cite{agileManifest}. As abordagens tradicionais defendem a previsibilidade e a estabilidade em projetos, visando bastante documentação, ou seja, elas são melhores aplicadas em projetos com requisitos estáveis, sendo menos favoráveis à mudanças  \cite{boehm2004}.
-
-A mudança do objetivo primário do que foi conversado com o representante da empresa é razoavelmente estável, visto que este possui a necessidade de manter os dados cadastrais de seus funcionários. Como visto na secção \ref{descricaoProblema} de descrição do problema e contexto da empresa, há a presença de instabilidade nos processos da empresa, a metodologia ágil é a que mais se adéqua para atender essas características.
-
-\item \textbf{Tamanho do projeto}
-
-Atualmente, processos ágeis funcionam melhor com o número pequeno a médio de pessoas em uma equipe, ou com aplicações pequenas. O RUP exige um número maior de artefatos, formalização e por isso ele não se sobressai em relação aos métodos ágeis \cite{boehm2004}.
-
-Este projeto possui uma pequena quantidade de envolvidos, quatro alunos da disciplina de Engenharia de Requisitos de Software levantarão os requisitos. O cliente, gestor de pessoas da Zenit, orientará e validará os requisitos do produto, a mestre da disciplina e o coach da equipe auxiliarão no projeto. Portanto, este fator direciona a escolha da metodologia ágil.
-\end{description}
-\subsubsection{Característica de gerenciamento}
-
-\begin{description}
-\item \textbf{Relação com o cliente}
-
-Metodologias ágeis necessitam de uma interação bastante próxima com o cliente, fato que proporciona maior análise por parte da equipe em relação ao trabalho já feito, facilitando atingir as necessidades e requisitos esperados da aplicação de forma mais rápida, pois o cliente fornece um feedback constante do projeto, com menos necessidade de documentação, caso haja maior participação e interação dele com a equipe. Já em metodologias tradicionais, esse contato com o cliente é mais formal, visa mais documentação e menos interações cliente - servidor, possibilitando ao cliente que ele continue suas atividades rotineiras \cite{boehm2004}.
-
-O cliente não exige muita documentação, e prefere um contato menos formal com a equipe de produção do sistema. Dessa forma, como definido por BOEHM, este contato menos formal,a maior proximidade com a equipe de desenvolvimento do software, a maior interação do cliente com ela também proporciona um feedback constante, logo a metodologia mais adequada é a ágil.
-
-\item \textbf{Planejamento e controle}
-
-Em metodologias ágeis, geralmente as equipes tem a possibilidade de não gastar muito tempo com planejamento, pois utilizam da interação com o cliente para gerar constantes feedbacks. Grande parte da documentação gerada pelas metodologias tradicionais, são realizadas na parte da documentação, sendo cerca de 20\% do tempo do projeto planejando e replanejando \cite{boehm2004}.
-
-O cliente não exige muita documentação, e como os processão de gestão de pessoas da empresa estão em implementação, a metodologia tradicional é pouco recomendada, visto que gasta-se 20\% do templo planejando e replanejando e mudanças durante o processo de desenvolvimento de software ocasionariam retrabalho, este poderia ser reduzido com as metodologias ágeis.
-
-\item \textbf{Comunicação}
-
-O manifesto ágil defende que todos indivíduos façam parte das interações realizadas, para isso, é necessário uma comunicação bastante próxima com todos os indivíduos, fato que retira a responsabilidade de uma única equipe de planejar todo o projeto, pois esse trabalho é dividido \cite{agileManifest}. Outra grande vantagem, da forma de contato da abordagem ágil, é o desenvolvimento compartilhado e a necessidade de um conhecimento tácito, que geram uma maior adaptação da equipe às necessidades do projeto. A forma de comunicação da abordagem tradicional tende a ter sentido único dependendo fortemente de conhecimento explícito documentado, fato que dificulta uma equipe ficar por dentro do que é realizado por outra equipe \cite{boehm2004}.
-
-O cliente tem disponibilidade de horário para reuniões e os horários são compatíveis com a equipe de engenharia de requisitos. Portanto, é facilitada a aplicação da abordagem ágil.
-
-\end{description}
-
-\subsubsection{Características técnicas}
-\begin{description}
-\item \textbf{Requisitos}
-
-A maioria dos métodos ágeis expressam requisitos em termos ajustáveis e histórias informais, e por ter ciclos de iteração rápidos, são capazes de lidar com projeto com requisitos instáveis. Nesse tipo de abordagem, o cliente junto com a equipe de desenvolvedores se juntam com o fim de priorizar os requisitos para que possam ser executados de forma que irão gerar mais valor ao cliente. Na abordagem tradicional, o levantamento de requisitos é mais formalizado e lento, sendo mais utilizado quando há requisitos mais estáveis \cite{boehm2004}.
-
-Como foi visto em tópicos anteriores, os requisitos podem mudar junto com a implementação dos processos da empresa. Essa mudança traz riscos aos projetos que utilizam metodologia tradicional. Além disso, o cliente tem interesse em participar com maior frequência na elicitação e desenvolvimento dos requisitos.
-
-Desenvolvimento e teste são características que não serão levadas em consideração, pois não são o foco da disciplina.
-
-\end{description}
-
-\subsubsection{Características das pessoas}
-\begin{description}
-
-\item \textbf{Relacionamento com o cliente}
-
-A maior diferença entre a metodologia ágil para a tradicional na seção “relacionamento entre o cliente”, é que na ágil, é enfatizado que o cliente faz parte da equipe, enquanto na tradicional, esse relacionamento entre cliente e desenvolvedores, é um relacionamento mais contratual \cite{boehm2004}.
-
-O perfil do cliente, é mais proativo, e é mais fácil para ele ter controle do que será realizado no projeto, caso ele esteja mais próximo da equipe do que por via de documentos burocráticos.
-
-\item \textbf{Desenvolvedores}
-
-Um dos maiores problemas da comunicação na abordagem ágil, é também uma das maiores vantagens, o conhecimento tácito, mas ele só se torna problema, em equipes não maduras e/ou equipes grandes. Aplicar um desenvolvimento ágil, é relativamente mais difícil do que aplicar uma abordagem tradicional \cite{boehm2004}.
-
-Apesar de ser mais difícil aplicar uma abordagem ágil, por necessitar uma maior maturidade \cite{boehm2004}, os integrantes da equipe estão mais acostumados a desenvolver utilizando essa metodologia de desenvolvimento, pois a equipe já desenvolveu softwares nessa metodologia e dois dos integrantes estagiam em locais onde são aplicados os conceitos ágeis para o desenvolvimento.
-\end{description}
-\subsection{Escolha da metodologia}
-
-Cada característica de projeto, gerenciamento e pessoas determinam a pré disposição de uma metologia de desenvolvimento prevalecer em relação a outra para que ela seja bem executada. O framework serve como base para selecionar o mais importante do uso ferramental que ele pode oferecer, dessa forma, é importante extrair o máximo dele para que o grupo de envolvidos com o projeto consiga adaptá-lo para cada problemática. Tendo em vista essa análise, a equipe concluiu que a abordagem que mais se encaixa no contexto é a ágil do Scaled Agile Framework \cite{safe}.
-
-\section{Processo de engenharia de requisitos}
-
-A intenção dessa seção é esclarecer as práticas e processo de Engenharia de Requisitos. Como foi definido na seção anterior, a abordagem utilizada será a ágil.
-
-O Framework que a equipe se baseou para modelar o processo a ser utilizado foi o Scaled Agile Framework \cite{safe}. Este framework possui uma estrutura de quatro níveis, portifólio, fluxo de valores, programa, time.
+\chapter[Execução à nível de Portfólio]{Execução à nível de Portfólio}
+Esse tópico representa as atividades e resultados obtidos pela equipe durante a execução do processo definido a nível de portfólio.
 
 \begin{figure}[H]
     \centering
-    \label{safeBigPicture}
-    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/safeBigPicture.eps}
-    \caption[Big picture SAFe]{Big picture SAFe. fonte:\url{http://www.scaledagileframework.com}}
+    \label{identificarInteresse}
+    \includegraphics[keepaspectratio=true,scale=0.6]{figuras/processoInteresses.eps}
+    \caption[Identificar interesses da empresa]{Processo - Nível de Portfólio - Identificar interesses da empresa}
 \end{figure}
 
-\subsection{Nível abstrato de portifólio}
+\begin{figure}[H]
+    \centering
+    \label{identificarInteresse}
+    \includegraphics[keepaspectratio=true,scale=0.6]{figuras/processoValores.eps}
+    \caption[Identificar valores da empresa]{Processo - Nível de Portfólio - Identificar valores da empresa}
+\end{figure}
 
-É o nível mais alto no framework, ele provê a organização básica para a organização em torno do fluxo de valores para alcançar o objetivo estratégico, agrupa pessoas e processos para este fim. O principal componente deste nível é o fluxo de valor, no qual cada um possui uma longa vida de uma série de definições, desenvolvimento, implantação de sistemas \cite{safe}.
+\section{Reuniões realizadas}
+Foram realizadas duas reuniões entre a equipe e o cliente para obter as informações necessárias do nível de portfólio, uma presencial e uma não presencial.
+\subsection{Reunião 01-Portfólio}\label{Reunião01-Portfólio}
+\begin{itemize}
+\item \textbf{Data de execução:}
+12/05/2016.
+\item \textbf{Objetivo da reunião:}
+entender o contexto de negócio, entender a problemática da empresa, elicitar os temas estratégicos e épicos de negócio.
+\item \textbf{Técnica de elicitação:}
+entrevista aberta, consiste em o entrevistador, membro da equipe de requisitos, possibilitar ao entrevistado, o Product Owner, expor as suas ideias a respeito do tema em questão \cite{leffingwell2011}, no caso, o problema da empresa.
+\item \textbf{Execução da técnica:}
+antes da reunião foi elaborado perguntas para atingir o objetivo dessa. Na execução da reunião, foi geradas mais perguntas a medida que a equipe entendia o problema. Sendo devidamente documentadas.
+\item \textbf{Resultado da reunião:}
+ao término da reunião foram obtidos, o diagrama de causa e efeito, representando o problema principal da empresa e seus sub problemas, será explanado na figura \ref{fishBone}. O tema estratégico e o épico de negócio da empresa, representado no \ref{backlogTemaEpicoImg}.
+\end{itemize}
 
-Neste nível é feito a conexão entre a empresa cliente e a desenvolvedora. Há uma via dupla, no qual a empresa fornece os temas estratégicos, ou seja, os contextos de negócio para guiar a produção do portifólio, e na outra via a empresa recebe a resposta do contexto do portifólio com as soluções atuais contendo suas fraquezas e benefícios, novas oportunidades e possíveis ameaças \cite{safe}.
+\subsection{Reunião 02-Portfólio}\label{Reunião02-Portfólio}
+\begin{itemize}
+\item \textbf{Data de execução:}
+27/05/201.
+\item \textbf{Objetivo da reunião:}
+validar se os épicos e temas estratégicos elicitados com o cliente estavam de acordo com seus interesses e se estes representam todas as necessidades. Devido o fato de só existir um tema estratégicos ref{tema1} identificado, o segundo objetivo da reunião foi fazer a priorização dos épicos.
+\item \textbf{Resultado da reunião:}
+ao término da reunião foram obtidos, o diagrama de causa e efeito, representando o problema principal da empresa e seus sub problemas, será explanado na imagem \ref{fishBone}. O tema estratégico e o épico de negócio da empresa, representado no \ref{backlogTemaEpicoImg}.
+\end{itemize}
 
-Neste nível tem-se um nível mais abstrato de requisitos, chamado de épicos de negócio (\textit{business epics}) que refletem as novas capacidades do sistema e há também os épicos habilitadores (\textit{enables epics}) que são definições técnicas arquiteturais necessárias para habilitar as novas capacidades. Estes épicos são responsabilidade dos donos dos épicos (\textit{epic owners}) e para que fique visível para todos os envolvidos no projeto, os épicos ficam em um backlog aguardando o momento para serem levados ao sistema de kanban para serem implementados \cite{safe}.
+\section{Entendimento do problema}
+A Zenit Aerospace é uma empresa júnior, da Univerdade de Brasília - Campus gama. A empresa é mantida pelos próprios alunos, em sua maioria são alunos de graduação da engenharia aeroespacial
 
-Este nível será utilizado no processo, pois é nele onde são identificados os interesses do cliente, e controlar o fluxo contínuo de valor a ser entregue a este, assim como determinar o que será realizado ou não tendo em vista os temas estratégicos da empresa.
+\subsection{Organização da empresa}
+Atualmente é dividida em dois tipos de funcionários: gestores e assessores. Os cargos de gestão são delegados a estudantes que são incorporados a empresa, cuja função é coordenar, gerir, controlar, uma das cinco diretorias ou a presidência da empresa. Aqueles que não estão no cargo de gerência são assessores, em que a responsabilidade é assessorar, auxiliar, dar suporte aos gestores. Ressalta-se que a participação no desenvolvimento de projetos não é restrita.
 
-\subsection{Nível abstrato Fluxo de valor}
+\begin{figure}[H]
+    \centering
+    \label{organizacaoZenit}
+    \includegraphics[keepaspectratio=true,scale=0.3]{figuras/zenitOrganograma.eps}
+    \caption[Organização da empresa]{Organização da empresa}
+\end{figure}
 
-Este nível é voltado para grandes construções e soluções complexas, que envolvem um grande número de colaboradores para construção multidisciplinar. É enderessado para projetos grandes e inclusive que possuam uma solução crítica. Isto exige a produção de mais artefatos, maior coordenação e que inclui um framework econômico para garantir o financiamento do fluxo de valores \cite{safe}.
+s demais direções executivas são: Presidência, Gestão de Pessoas, Marketing, Administrativo-financeiro, Projeto e Pesquisa e desenvolvimento. 
 
-Visto que o projeto da solução não é um projeto que envolve muitas áreas do conhecimento e não é um sistema crítico com soluções complexas, de larga escala e que hajam vários outros projetos interagindo junto, este nível abstrato descrito no SAFe não se adéqua ao contexto do problema da empresa júnior Zenit Aerospace. A área do conhecimento tratado pelo projeto é de administração.
+A direção de pessoas é responsável por supervisionar a atualização do banco de dados de membros da empresa, prover a motivação dos membros mediante políticas de reconhecimento, emissão de certificados da participação dos membros em projetos, auxiliar no planejamento de treinamentos, seleção de membros para os projetos \cite{regimentoInternoZenit}.
+A direção de projetos é responsável por gerir os projetos, trabalhos, demandas para a empresa. Esta área determinará a quantidade de pessoas a serem alocadas, as capacidades técnicas necessárias e juntamente com a direção de pessoas, quais funcionários possuem os requisitos para preencher a vaga no projeto \cite{regimentoInternoZenit}.
 
-\subsection{Nível abstrato Programa}
+\section{Descrição do problema}
+O gestor de pessoas é responsável por organizar os dados dos funcionários da Zenit com relação a sua capacitação e seus dados pessoais. A atual forma para manter os dados da empresa não atende a expectativa do gestor de pessoas, pois dificulta a utilização destes para o desempenho de suas atividades que necessite da informação dos funcionários. Há uma planilha online do Google Drive no qual todos os dados pessoais dos funcionários ficam registrados, porém não há o registro da capacitação de cada funcionário. Todos os membros recebem acesso, mas somente o gestor de pessoas e o presidente organizacional tem autorização de modificar algum dado. Caso algum funcionário saia da empresa, é responsabilidade do gestor de pessoas remover os dados do ex funcionário, assim como o acesso as informações dos demais funcionários.
 
-Determina os times e outros recursos que são necessários para o desenvolvimento. Há a implementação do \textit{Agile Release Train} (ART) que é uma organização falsa criada para remover passos, intervenções desnecessárias e acelerar a entrega de valor. Em geral, cada ART realiza uma parte, ou todo, o fluxo de valor e possui a infraestrutura necessária para entregar projetos de software \cite{safe}.
+Além disso o gestor de pessoas não consegue fazer acompanhamento das habilidades técnicas e experiências, e determinar com base nos dados de qualificação de cada membro quais são as atividades recomendáveis para ele desempenhar.
 
-Neste nível há a descrição dos requisitos ainda em nível abstrato chamados de características de negócio (\textit{business features}) e características habilitadoras (\textit{enables features}) que correspondem aos seus épicos. E assim como os épicos, estes ficam visíveis em um backlog e em um kanban \cite{safe}.
+Tendo como base os resultados recolhidos pela equipe de requisitos na primeira reunião, o problema da organização foi representada pelo  diagrama de causa e efeito a seguir.
 
-Por tratar do planejamento a nível menos abstrato que o portfólio e mais que o nível do time, usaremos este nível pois ele é o intermédio dos interesses da empresa e o time que irá desenvolver os requisitos mais específicos.
+\begin{figure}[H]
+    \centering
+    \label{fishBone}
+    \includegraphics[keepaspectratio=true,scale=0.3]{figuras/Inefici_ncia_na_gest_o_de_pessoas_p.eps}
+    \caption[Diagrama de causa e efeito]{Diagrama de causa e efeito}
+\end{figure}
 
-\subsection{Nível abstrato Time}
+A tabela a seguir foi feita para representar resumidamente o problema, a fim de possibilitar melhor entendimento do problema.
 
-Os times possuem uma organização, modelo de processo e função para desenvolvimento das atividades, em que é utilizado o \textit{ScrumXP} ou times kanban. Cada time é parte de um ART e deve definir, construir e testar as histórias de usuário (\textit{user histories}) que representam as funcionalidades do sitema como pequenas histórias e histórias habilitadoras (\textit{enable histories}) que são a descrição dos requisitos não funcionais \cite{safe}.
+\begin{table}[H]
+    \centering
+    \label{descricaoAtividades}
+    \caption{Problema}
+        \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{O problema da empresa é} &Ineficiência da gestão de pessoas.\\
+        \hline
+        \textbf{Afeta} &Os gestores da Zenit\\
+        \hline
+        \textbf{As consequências são} &Ineficiência de escolha de membros para os projetos e a desmotivação para realizar certas atividades dos membros.\\
+        \hline
+        \textbf{Uma solução bem sucedida seria} &Um sistema que centralizaria as informações dos membros da empresa e possibilita fazer buscas nestes dados.\\
+        \hline
+    \end{tabular}
+\end{table}
 
-Este nível é o time que irá realizar a descrição mais detalhada dos requisitos e produzir o backlog do produto, logo, este não pode faltar. Como haverá apenas um ART e um time ágil desenvolvendo, determina-se que este irá adotar o \textit{Scrum}.
+\subsection{Organização da empresa}
+Este é o resumo dos requisitos elicitados a nível de portfólio. A especificação destes, assim como seus demais atributos estão no apendice \ref{backlogPortfólio}
+
+\textbf{Tema:}
+\begin{itemize}
+\item {TE01 Conhecimento e acompanhamento individual dos membros da empresa}
+\end{itemize}
+
+\textbf{Business}
+\begin{itemize}
+\item {EP01 Informações sobre membros da empresa}
+\item {EP02 Acompanhamento do desempenho de membros da empresa}
+\end{itemize}
+
+\textbf{Enable:}
+\begin{itemize}
+\item {EP03 Servidor para aplicação web}
+\end{itemize}
+
+
