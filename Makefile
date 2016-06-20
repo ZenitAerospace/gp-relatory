@@ -21,6 +21,7 @@ EDITAVEIS_SOURCES = informacoes.tex \
                     execucaodoprocesso.tex \
                     execucaoportfolio.tex \
                     execucaoprograma.tex \
+                    execucaotime.tex \
                     consideracoes.tex 
 					
 
