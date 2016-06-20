@@ -22,14 +22,14 @@ Foram realizadas duas reuniões, entre a equipe e o cliente, para obter as infor
 \indent \textbf{Data de execução:} 12/05/2016.\\
 \indent \textbf{Objetivo da reunião:} entender o contexto de negócio, entender a problemática da empresa, elicitar os temas estratégicos e épicos de negócio.\\
 \indent \textbf{Técnica de elicitação:} entrevista aberta, consiste em o entrevistador, membro da equipe de requisitos, possibilitar ao entrevistado, o Product Owner, expor as suas ideias a respeito do tema em questão \cite{leffingwell2011}, no caso, o problema da empresa.\\
-\indent \textbf{Execução da técnica:} antes da reunião, foi elaborada perguntas para que objetivo da reunião fosse alcançado. Na execução desta, foi geradas mais perguntas a medida que a equipe entendia o problema. Sendo devidamente documentadas, representado pelo apêndice: ???.\\
-\indent \textbf{Resultado da reunião:} ao término da reunião foram obtidos, o diagrama de causa e efeito, representando o problema principal da empresa e seus sub problemas, este que será explanado na imagem \ref{fishBone}. O tema estratégico e o épico de negócio da empresa, estão representados na imagem: \ref{backlogTemaEpicoImg}.\\
+\indent \textbf{Execução da técnica:} antes da reunião, foi elaborada perguntas para que objetivo da reunião fosse alcançado. Na execução desta, foi geradas mais perguntas a medida que a equipe entendia o problema. Sendo devidamente documentadas, representado pelo apêndice \ref{perguntasReuniao}.\\
+\indent \textbf{Resultado da reunião:} ao término da reunião foram obtidos, o diagrama de causa e efeito, representando o problema principal da empresa e seus sub problemas, este que será explanado na imagem \ref{fishBone}. O tema estratégico e o épico de negócio da empresa, estão representados no backlog \ref{temasEstrategicos}.\\
 
 \subsection{Reunião 02-Portfólio}\label{Reunião02-Portfólio}
 
 \indent \textbf{Data de execução:} 27/05/201.\\
-\indent \textbf{Objetivo da reunião:} validar os temas estratégicos e os épicos de negócio elicitados com o PO, confirmar com este se os épicos e temas, estavam de acordo com seus interesses e suas necessidades. Devido o fato de só existir um tema estratégicos \ref{tema1} identificado, o segundo objetivo da reunião foi fazer a priorização dos épicos.\\
-\indent \textbf{Resultado da reunião:} ao término da reunião foram obtidos, o diagrama de causa e efeito, representando o problema principal da empresa e seus sub problemas, será explanado na imagem \ref{fishBone}. O tema estratégico e o épico de negócio da empresa, representado no \ref{backlogTemaEpicoImg}.\\
+\indent \textbf{Objetivo da reunião:} validar os temas estratégicos e os épicos de negócio elicitados com o PO, confirmar com este se os épicos e temas, estavam de acordo com seus interesses e suas necessidades. Devido o fato de só existir um tema estratégicos \ref{temasEstrategicos} identificado, o segundo objetivo da reunião foi fazer a priorização dos épicos.\\
+\indent \textbf{Resultado da reunião:} ao término da reunião foram obtidos, o diagrama de causa e efeito, representando o problema principal da empresa e seus sub problemas, será explanado na imagem \ref{fishBone}. O tema estratégico e o épico de negócio da empresa, representado no \ref{epicos}.\\
 
 \section{Entendimento do problema}
 A Zenit Aerospace é uma empresa júnior, da Univerdade de Brasília - Campus gama. A empresa é mantida pelos próprios alunos, em sua maioria são alunos de graduação da engenharia aeroespacial
@@ -46,8 +46,8 @@ Atualmente é dividida em dois tipos de funcionários: gestores e assessores. Os
 
 As demais direções executivas são: Presidência, Gestão de Pessoas, Marketing, Administrativo-financeiro, Projeto e Pesquisa e desenvolvimento. 
 
-A direção de pessoas é responsável por supervisionar a atualização do banco de dados de membros da empresa, prover a motivação dos membros mediante políticas de reconhecimento, emissão de certificados da participação dos membros em projetos, auxiliar no planejamento de treinamentos, seleção de membros para os projetos \cite{regimentoInternoZenit}.
-A direção de projetos é responsável por gerir os projetos, trabalhos, demandas para a empresa. Esta área determinará a quantidade de pessoas a serem alocadas, as capacidades técnicas necessárias e juntamente com a direção de pessoas, quais funcionários possuem os requisitos para preencher a vaga no projeto \cite{regimentoInternoZenit}.
+A direção de pessoas é responsável por supervisionar a atualização do banco de dados de membros da empresa, prover a motivação dos membros mediante políticas de reconhecimento, emissão de certificados da participação dos membros em projetos, auxiliar no planejamento de treinamentos, seleção de membros para os projetos \cite{regimentoZenit}.
+A direção de projetos é responsável por gerir os projetos, trabalhos, demandas para a empresa. Esta área determinará a quantidade de pessoas a serem alocadas, as capacidades técnicas necessárias e juntamente com a direção de pessoas, quais funcionários possuem os requisitos para preencher a vaga no projeto \cite{regimentoZenit}.
 
 \section{Descrição do problema}
 O gestor de pessoas é responsável por organizar os dados dos funcionários da Zenit com relação a sua capacitação e seus dados pessoais. A atual forma para manter os dados da empresa não atende a expectativa do gestor de pessoas, pois dificulta a utilização destes para o desempenho de suas atividades que necessite da informação dos funcionários. Há uma planilha online do Google Drive no qual todos os dados pessoais dos funcionários ficam registrados, porém não há o registro da capacitação de cada funcionário. Todos os membros recebem acesso, mas somente o gestor de pessoas e o presidente organizacional tem autorização de modificar algum dado. Caso algum funcionário saia da empresa, é responsabilidade do gestor de pessoas remover os dados do ex funcionário, assim como o acesso as informações dos demais funcionários.
@@ -58,9 +58,8 @@ Tendo como base os resultados recolhidos pela equipe de requisitos na primeira r
 
 \begin{figure}[H]
     \centering
-    \label{fishBone}
     \includegraphics[keepaspectratio=true,scale=0.3]{figuras/Inefici_ncia_na_gest_o_de_pessoas_p.eps}
-    \caption[Diagrama de causa e efeito]{Diagrama de causa e efeito}
+    \caption[Diagrama de causa e efeito]{Diagrama de causa e efeito\label{fishBone}}
 \end{figure}
 
 A tabela a seguir foi feita para representar resumidamente o problema, a fim de possibilitar melhor entendimento do problema.
@@ -87,11 +86,13 @@ O backlog a seguir foi elaborado a partir das reuniões com o \textit{Product Ow
 
 
 \subsection{Temas estratégicos}
+\label{temasEstrategicos}
 \begin{itemize}
 \item {TE01 - Conhecimento e acompanhamento individual dos membros da empresa}
 \end{itemize}
 
 \subsection{Épicos}
+\label{epicos}
 \textbf{Business}
 \begin{itemize}
 \item {EP01 - Informações sobre membros da empresa}
