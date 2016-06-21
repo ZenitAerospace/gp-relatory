@@ -22,7 +22,8 @@ EDITAVEIS_SOURCES = informacoes.tex \
                     execucaoportfolio.tex \
                     execucaoprograma.tex \
                     execucaotime.tex \
-                    consideracoes.tex 
+                    consideracoes.tex \
+                    anexos.tex
 					
 
 EDITAVEIS_FILES = $(addprefix $(EDITAVEIS_DIR)/, $(EDITAVEIS_SOURCES))

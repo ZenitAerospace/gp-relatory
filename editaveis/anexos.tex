@@ -1,0 +1,989 @@
+\begin{anexosenv}
+
+\partanexos
+
+\chapter{Especificações do nível portfólio}
+
+\section[Temas Estratégicos]{Temas estratégicos}
+
+\textbf{Identificador:} TE01\\
+\textbf{Nome:} Conhecimento e acompanhamento individual dos membros da empresa\\
+\textbf{Prioridade:} Alta\\
+\textbf{Descrição:} A empresa deseja investir no setor de gestão de pessoas a fim de melhorar o desempenho das equipes nos projetos.\\
+
+\section[Épicos]{Épicos}
+
+\subsection[Business]{Business}
+
+\textbf{Identificador:} EP01\\
+\textbf{Requisito de origem:} TE01\\
+\textbf{Prioridade:} Alta\\
+\textbf{Nome:} Informações pessoais sobre membros da empresa\\
+\textbf{Descrição:} Há a necessidade da diretoria de gestão de pessoas ter acesso e manipular as informações pessoais, acadêmicas, profissionais e de participação em projetos externos dos membros da Zenit para que este possa identificar experiências dos membros ativos da equipe e contatá los.\\
+
+\textbf{Identificador:} EP02\\
+\textbf{Requisito de origem:} TE01\\
+\textbf{Prioridade:} Alta\\
+\textbf{Nome:}  Acompanhamento do desempenho de membros da empresa\\
+\textbf{Descrição:} Há a necessidade da diretoria de gestão de pessoas acompanhar o desempenho dos membros, para que este possa identificar dificuldades, facilidades e motivações a fim de haver uma melhor escolha destes em projetos e reconhecer o empenho do membro em relação a empresa.\\
+
+\textbf{Identificador:} EP04\\
+\textbf{Requisito de origem:} TE01\\
+\textbf{Prioridade:} Média\\
+\textbf{Nome:}  Acompanhamento de atividades internas do membro\\
+\textbf{Descrição:} A diretoria de gestão de pessoas, desejo acompanhar as atividades dos membros internas à Zenit, para saber as atividades que eles desempenharam e poder selecionar membros mais adequados para os projetos.\\
+
+\subsection[Enable]{Enable}
+
+\textbf{Identificador:} EP03\\
+\textbf{Requisitos de origem:} TE01\\
+\textbf{Prioridade:} Alta\\
+\textbf{Nome:}  Servidor para aplicação web\\
+\textbf{Descrição:} Um servidor para disponibilizar uma aplicação web para que os funcionários da Zenit possam acessar de qualquer dispositivo.\\
+
+
+\chapter{Especificações de features}
+
+\section[EP01: Informações sobre membros da empresa]{EP01: Informações sobre membros da empresa}
+
+\subsection[Business]{Business}
+
+\textbf{ID: FT01\\
+Nome:} Gerenciar informações acadêmicas\\
+\textbf{Prioridade:} Altíssima\\
+\textbf{Descrição:} Os membros da empresa precisam inserir e manter atualizada suas informações acadêmicas, para permitir à empresa conhecê-los.\\
+
+\textbf{ID: FT02 \\
+Nome:} Gerenciar informações externas a Zenit\\
+\textbf{Prioridade:} Altíssima\\
+\textbf{Descrição:} Os membros da empresa precisam inserir e manter atualizada suas informações externas a Zenit, para permitir à empresa conhecê-los.\\
+
+\textbf{ID: FT04 \\
+Nome:} Gerenciar um cadastro pessoal\\
+\textbf{Prioridade:} Alta\\
+\textbf{Descrição:} Os membros da empresa precisam inserir e manter atualizada suas informações relativas aos dados pessoais, para permitir à empresa conhecê-los.\\
+
+\subsection[Enables]{Enables}
+
+\textbf{ID: FT05\\
+Nome:} Integração com módulo de projetos\\
+\textbf{Prioridade:} Baixa\\
+\textbf{Descrição:} Possuir uma interface para acesso aos dados que possibilite integração com módulo de gestão de projetos.\\
+
+\textbf{ID: FT06\\
+Nome:} Controle de perfil de acesso\\
+\textbf{Prioridade:} Altíssima\\
+\textbf{Descrição:} Os funcionários que não tenham perfil de gestor só poderão acessar e modificar suas próprias informações, para garantir a integridade dos dados.\\
+
+\section[EP02: Acompanhamento do desempenho de membros da empresa]{EP02: Acompanhamento do desempenho de membros da empresa}
+
+\subsection[Business]{Business}
+
+\textbf{ID: FT07}\\
+\textbf{Nome:} Gerenciamento da evolução de perfis profissionais\\
+\textbf{Prioridade:} Alta\\
+\textbf{Descrição:} Os gestores precisam inserir o perfil profissional dos assessores para poder acompanhar a evolução do perfil deles até o ideal.\\
+
+\textbf{ID: FT08}\\
+\textbf{Nome:} Acompanhamento motivacional dos membros \\
+\textbf{Prioridade:} Alta\\
+\textbf{Descrição:} O gestor de pessoas quer saber o quanto os funcionários tiveram de desempenho baseados nos critérios pontuados por ele, para poder bonificar, com o prêmio escolhido pelos próprios funcionários, os que obtiveram maior desempenho.\\
+
+\textbf{ID: FT09}\\
+\textbf{Nome:} Suporte ao acompanhamento dos gestores \\
+\textbf{Prioridade:} Baixa\\
+\textbf{Descrição:} Os gestores da Zenit querem ter acesso as informações dos membros e poder notificar ao gestor de pessoas os membros que não estejam bem.\\
+
+\textbf{ID: FT10}\\
+\textbf{Nome:} Acompanhamento de presença\\
+\textbf{Prioridade:} Baixa\\
+\textbf{Descrição:} Responsável por gerenciar o quadro de horários dos membros da empresa, com a geração de um relatório de presença, a fim de identificar membros não assíduos.\\
+
+\textbf{ID: FT18}\\
+\textbf{Nome:} Mecanismos de busca de informações sobre os membros\\
+\textbf{Prioridade:} Altíssima\\
+\textbf{Descrição:} O gestor de pessoas precisa buscar informações sobre os membros e poder filtrá-las para facilitar o acesso a essas informações e para que se possa fazer o mapeamento das habilidades procuradas pelo gestor de pessoas nos membros\\
+
+\section[EP03: Servidor para aplicação web]{EP03: Servidor para aplicação web}
+
+\subsection[Enables]{Enables}
+
+\textbf{ID: FT11}\\
+\textbf{Nome: }Padrão arquitetural da aplicação web Model-View-Controller\\
+\textbf{Prioridade:} Altíssima\\
+\textbf{Descrição:} Uso do framework de desenvolvimento Ruby on Rails, para que a aplicação seja desenvolvida no padrão arquitetural em três camadas: model, view e controller.\\
+
+\textbf{ID: FT12}\\
+\textbf{Nome:} Disponibilidade do serviço\\
+\textbf{Prioridade:} Alta\\
+\textbf{Descrição:} O sistema deve estar disponível de segunda a sexta, 24 horas por dia, para que os membros possam acessar o sistema enquanto estiverem trabalhando.\\
+
+
+\textbf{ID: FT13}\\
+\textbf{Nome:} Interfaces de interação responsivas\\
+\textbf{Prioridade:} Alta\\
+\textbf{Descrição:} O sistema deve adaptar as interfaces de interação com o usuário de acordo com a resolução dos dispositivos, para que aquele possa ser acessado por dispositivos móveis e desktop.\\
+
+\section[EP04: Acompanhamento de atividades internas do membro]{EP04: Acompanhamento de atividades internas do membro}
+
+\subsection[Business]{Business}
+
+\textbf{ID: FT014}\\
+\textbf{Nome: }Gerenciamento das informações dos membros em projetos internos à Zenit\\
+\textbf{Prioridade:} Altíssima\\
+\textbf{Descrição:} Os gestores precisam inserir os dados sobre projetos internos à empresa dos membros, para que os gestores possam acompanhar melhor o desenvolvimento dos membros em projetos e selecioná-los em projetos futuros.\\
+
+\textbf{ID: FT17}\\
+\textbf{Nome: }Gerenciamento das Informações sobre as atividades da área interna membros na empresa\\
+\textbf{Prioridade:} Média\\
+\textbf{Descrição:} Os gestores precisam inserir as atividades delegadas aos membros da empresa, para que os gestores possam acompanhar melhor o desenvolvimento das tarefas de seus assessores.\\
+
+\textbf{ID: FT15}\\
+\textbf{Nome:} Gerenciamento das informações internas pessoais à Zenit\\
+\textbf{Prioridade:} Média\\
+\textbf{Descrição:} O membro precisa ter acesso a informações pessoais relativas a suas atividades internas à Zenit, para que os gestores possam ter total controle sobre as atividades do membro.\\
+
+\textbf{ID: FT16}\\
+\textbf{Nome:} Gerenciamento das informações sobre mini cursos\\
+\textbf{Prioridade:} Média\\
+\textbf{Descrição:} O gestor de pessoas insere os seus dados sobre participação em mini cursos oferecidos pela empresa, para que fique associe o mini curso com o membro e ele possa ser selecionado para projetos relacionados aos conteúdos aprendidos ou ministrados.\\
+
+\chapter{Especificação de Histórias}
+
+\section{Informações pessoais sobre membros da empresa}
+\subsection{Gerenciar informações acadêmicas}
+
+\textbf{Nome: Ver disciplinas cadastradas\\
+    Prioridade: Média\\
+    Identificador: US01\\
+    Descrição:}
+    Eu, como Gestor de pessoas, quero ver todas as disciplinas cadastradas, para que eu possa gerencia-las.\\
+\textbf{Critérios de aceitação:}
+ \begin{itemize}
+            \item O gestor de pessoas deve poder ver em forma de lista, ordenada alfabeticamente, todas as disciplinas cadastradas no sistema que representará as matérias das grades das engenharias.
+\end{itemize}
+        
+
+\textbf{Nome: Inserir novas disciplinas\\
+    Prioridade: Altíssima\\
+    Identificador: US02\\
+    Descrição:} Eu, como Gestor de pessoas, quero adicionar uma disciplina, para que os membros possam adicioná-las em seu perfil acadêmico.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+            \item O gestor de pessoas deve poder adicionar o nome de uma disciplina em uma lista que representará todas as matérias das grades das engenharias.
+            \item A informação necessária é somente: nome da disciplina. Sendo este um campo obrigatório.
+            \item A ação de adicionar a disciplina pode ser cancelada.
+            \item Campos obrigatórios não preenchidos devem gerar mensagem de erro ao tentar salvá-los.
+            \item Os dados só são registrados ao pressionar o botão “Cadastrar disciplina”
+            \item   Após a confirmação do cadastro da disciplina deve se aparecer uma mensagem com a seguinte informação: “Cadastro da disciplina efetuado com sucesso”.
+\end{itemize}
+
+
+\textbf{Nome: Remover disciplinas\\
+    Prioridade: Baixa\\
+    Identificador: US03\\
+    Descrição:} Eu, como Gestor de Pessoas, desejo remover uma disciplina cadastrada, para que os membros possam adicionar apenas disciplinas existentes ao seu perfil.\\
+\textbf{Critérios de aceitação:}        
+ \begin{itemize}
+            \item Deve ter um ícone de exclusão ao lado do item da lista com o nome da disciplina que se deseja excluir, para que somente o gestor de pessoas possa remover uma disciplina cadastrada.
+            \item Quando o gestor pressionar o botão de remoção da disciplina deve se gerar uma mensagem de confirmação da exclusão da disciplina com a seguinte mensagem: “Tem certeza que deseja remover esta disciplina?”. Seguida das opções: “Sim” e “Não”, em forma de botões. 
+            \item Após a confirmação da exclusão da disciplina deve se aparecer uma mensagem com a seguinte informação: “Exclusão da disciplina efetuada com sucesso”.
+            A ação de exclusão da disciplina pode ser cancelada.
+\end{itemize}
+
+\textbf{Nome: Adicionar informações acadêmicas\\
+    Prioridade: Altíssima\\
+    Identificador: US04\\
+    Descrição:} Eu, como membro, quero inserir minhas informações acadêmicas para que o gestor de pessoas possa me selecionar para uma atividade ou projeto, baseado nos meus conhecimentos acadêmicos.\\
+\textbf{Critérios de aceitação:}        
+\begin{itemize}
+    \item Deve ser fornecido ao membro um formulário onde o este inserirá sua matrícula, ano de ingresso na faculdade e semestre atual, sendo estes dados campos obrigatórios.
+    \item O membro deve ser capaz de poder marcar ou desmarcar na lista de disciplinas por meio de um checkbox, a opção de: Já cursei, monitoria UnB e monitoria Zenit. Sendo estas opções campos não obrigatórios.
+    \item Deve haver um quadro, representando uma agenda semanal, com todos os possíveis horários de aula, sendo estes: 08-10, 10-12. 12-13, 13-14, 14-16, 16-18, 18-20 de segunda a sábado. 
+    \item Após ser clicado em um horário, deverá ser possível selecionar em uma lista de disciplinas a disciplina que será cursada, representando assim sua grade atual. Sendo assim, a matéria escolhida exibida nessa agenda semanal.
+    \item A ação de cadastro pode ser cancelada.
+\end{itemize}
+
+\textbf{Nome: Alterar informações acadêmicas\\
+    Prioridade: Baixa\\
+    Identificador: US05\\
+    Descrição:} Eu, como membro, quero modificar minhas informações acadêmicas para que eu possa manter meus dados acadêmicos atualizados.\\
+\textbf{Critérios de aceitação:}        
+\begin{itemize}
+    \item Deve ser fornecido um ícone/opção na qual o membro poderá alterar o formulário que contém Matrícula e ano de ingresso e semestre de ingresso.
+    \item Deve ser fornecido a opção de quando clicado na grade de matérias que estão sendo cursadas o membro poder modifica las, ou seja, deixar sem disciplina assim como escolher outra disciplina para aquele horário.
+    \item A ação de modificação dos dados acadêmicos pode ser cancelada.
+\end{itemize}
+
+\textbf{Nome: Informações acadêmicas no perfil\\
+    Prioridade: Média\\
+    Identificador: US06\\
+    Descrição:} Eu, como membro, quero ver as informações acadêmicas dos membros para que eu buscar informações com eles e indicá-los para projetos baseado nos seus conhecimentos acadêmicos.\\
+\textbf{Critérios de aceitação:}        
+\begin{itemize}
+    \item Qualquer membro deve ser capaz de ver todos os dados no perfil.
+    \item As informações devem estar disposta de maneira tabular.
+\end{itemize}
+
+\subsection{Gerenciar informações pessoais}
+
+\textbf{Nome: Inserir dados pessoais\\
+    Prioridade: Altíssima\\
+    Identificador: US01\\
+    Descrição:} Eu, como membro da empresa, quero inserir informações relativas aos meus dados pessoais, para permitir que à empresa me conheça melhor.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Os campos obrigatório são: nome, email, CPF, RG.
+    \item A ação de cadastro pode ser cancelada.
+    \item Campos obrigatórios não preenchidos devem gerar mensagem de erro ao tentar salvá-los.
+    \item A ação de cadastro pode ser cancelada.
+\end{itemize}
+
+\textbf{Nome: Visualizar dados dos usuários\\
+    Prioridade: Alta\\
+    Identificador: US02\\
+    Descrição:} Eu, como membro, desejo visualizar os as informações pessoais de outros membros para que eu consiga ter o contato dos demais membros.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Os gestores poderão visualizar todo e qualquer dado de cada membro do sistema
+    \item Os membros, conselho consultivo e os trainee poderão visualizar quase todos os dados de de cada usuário do sistema, menos o CPF RG.
+\end{itemize}
+
+\textbf{Nome: Manter dados pessoais atualizados\\
+    Prioridade:  Média\\
+    Identificador: US03\\
+    Descrição:} Eu, como membro da empresa, quero manter atualizadas as informações relativas aos meus dados pessoais, para permitir que à empresa me conheça melhor.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Os campos obrigatório são: nome, email, CPF, RG.
+    \item Os gestores devem ser capazes de modificar os dados relativos as suas informações pessoais no \item sistema de qualquer membro;
+    \item A ação de cadastro pode ser cancelada.
+    \item Campos obrigatórios não preenchidos devem gerar mensagem de erro ao tentar salvá-los.
+    \item A ação de cadastro pode ser cancelada.
+\end{itemize}
+
+\subsection{Gerenciar informações externas a Zenit}
+
+\textbf{Nome: Visualizar perfil profissional\\
+    Prioridade: Baixa\\
+    Identificador: US07\\
+    Descrição: } Para que outros membros vejam os minhas informações profissionais, como membro da Zenit, eu quero disponibilizar essas informações no meu perfil profissional.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Informações separadas por secções: projetos, cursos, trabalhos, conhecimentos extras e workshops.
+    \item   As secções que não tem dados registrados aparecerão apenas o botão para atualizar informações desta secção.
+    \item É possível encurtar uma secção clicando nela.
+    \item É exibido uma lista com todos os projetos contendo os atributos: nome do projeto, atividades realizadas, data de ingresso e saída.
+    \item É exibido uma lista com todos os estágios e trabalhos contendo os atributos: nome da Empresa, minhas atividades, o tempo total na empresa e as datas de entrada e saída.
+    \item É exibida uma lista com todos os cursos contendo os atributos: nome do curso, carga horária, se ministrou ou participou do curso, descrição.
+    \item É exibida uma lista com todos os conhecimentos extras contendo os atributos: conhecimento e nível de conhecimento.
+\end{itemize}
+
+\textbf{Nome: Inserir informações da área de projetos\\
+    Prioridade: Altíssima\\
+    Identificador: US02\\
+    Descrição:} Eu, como membro da Zenit, desejo inserir atualizadas informações de minhas participações em projetos para que a empresa tenha conhecimento de meus trabalhos.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário onde o usuário preencherá os campos: entidade responsável pelo projeto, nome do projeto, concluído ou não, data de ingresso e saída do projeto, atividades desempenhadas no projeto, área de conhecimento, se era remunerado, projeto era PBIC ou de extensão.
+    \item Ao menos uma atividade deve ser inserida.
+    \item A data de saída pode ficar em branco caso o membro ainda esteja no projeto.
+    \item Os campos obrigatórios nome do projeto, data de ingresso e atividades realizadas caso não preenchidos irão gerar uma mensagem de alerta.
+    \item Pode ser realizada a ação de cancelar um cadastro.
+\end{itemize}
+
+\textbf{Nome: Modificar informações da área de projetos\\
+    Prioridade: Baixissíma\\
+    Identificador: US08\\
+    Descrição:} Eu, como membro da Zenit, desejo atualizar informações de minhas participações em projetos para que a empresa tenha conhecimento de todas contribuições nos projetos.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário com dados pré-carregados, onde o usuário preencherá os campos: entidade responsável pelo projeto, nome do projeto, concluído ou não, data de ingresso e saída do projeto, atividades desempenhadas no projeto, área de conhecimento, se era remunerado, projeto era PIBIC ou de extensão.
+    \item A data de saída pode ficar em branco caso o membro ainda esteja no projeto.
+    \item Os campos obrigatórios nome do projeto, data de ingresso e atividades realizadas caso não preenchidos irão gerar uma mensagem de alerta.
+    \item Pode ser realizada a ação de cancelar um cadastro.
+\end{itemize}
+
+\textbf{Nome: Inserir informações da área de estágios e trabalhos\\
+    Prioridade: Alta\\
+    Identificador: US03\\
+    Descrição:} Eu, como membro da Zenit, desejo inserir informações dos estágios e trabalhos que já trabalhei para que a empresa tenha conhecimento de meus trabalhos.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário onde o usuário preencherá os campos: Nome da Empresa, atividades desempenhadas, data de ingresso e saída, se era remunerado.
+    \item A data de saída pode ficar em branco caso ainda esteja estagiando.
+    \item Os campos obrigatórios: Nome da empresa, data de ingresso e atividades desemprenhadas.
+    \item Os dados são salvos ao acionar o botão salvar.
+    \item Pode ser realizada a ação de cancelar.
+    \item Pode adicionar e modificar o campo de atividades.
+\end{itemize}
+
+\textbf{Nome: Alterar informações da área de estágios e trabalhos\\
+    Prioridade: Baixíssima\\
+    Identificador: US09\\
+    Descrição:} Eu, como membro da Zenit, desejo atualizadas informações dos estágios e trabalhos que já trabalhei para que a empresa tenha conhecimento de meus trabalhos.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário com dados pré-carregados onde o usuário preencherá os campos: Nome da \item Empresa, atividades desempenhadas, data de ingresso e saída, se era remunerado.
+    \item A data de saída pode ficar em branco caso ainda esteja estagiando
+    \item Os campos obrigatórios: Nome da empresa, data de ingresso e atividades desemprenhadas.
+    \item Os dados são salvos ao acionar o botão salvar.
+    \item Pode ser realizada a ação de cancelar.
+    \item Pode adicionar e modificar o campo de atividades.
+\end{itemize}
+
+\textbf{Nome: Inserir informações dos cursos\\
+    Prioridade: Alta\\
+    Identificador: US04\\
+    Descrição:} Eu, como membro da Zenit, desejo cadastrar informações dos cursos que já participei e ministrei para que a empresa tenha conhecimento de meus trabalhos e conhecimentos.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário onde o usuário preencherá os campos: nome do curso, data de início, carga horária, ministrou o curso ou apenas assistiu, descrição, recebeu certificado.
+    \item Os campos obrigatórios: Nome do curso, tempo de duração, ministrou ou apenas assistiu, carga horária.
+    \item Pode ser realizada a ação de cancelar um cadastro.
+    \item Um botão deve ser acionado para aplicar as mudanças desejadas.
+\end{itemize}
+
+\textbf{Nome: Atualizar as informações dos cursos\\
+    Prioridade:  Baixíssima\\
+    Identificador: US10\\
+    Descrição:} Eu, como membro da Zenit, desejo atualizar informações dos cursos que já participei e ministrei para que a empresa tenha conhecimento de meus trabalhos e conhecimentos\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário com dados pré-carregados onde o usuário preencherá os campos: nome do curso, data de início, carga horária, ministrou o curso ou apenas assistiu, descrição, recebeu certificado.
+    \item Os campos obrigatórios: Nome do curso, tempo de duração, ministrou ou apenas assistiu, carga horária.
+    \item Pode ser realizada a ação de cancelar um cadastro.
+    \item Um botão deve ser acionado para aplicar as mudanças desejadas.
+\end{itemize}
+
+\textbf{Nome: Inserir informações de congressos, palestras e workshops\\
+    Prioridade: Média\\
+    Identificador: US05\\
+    Descrição:} Eu, como membro da Zenit, desejo inserir as informações dos Congressos, palestras e workshops que já participei para que a empresa tenha conhecimento de meus trabalhos e conhecimentos.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário onde o usuário preencherá os campos: nome, data em que foi feito, tempo de duração, assunto tratado, se recebeu certificado.
+    \item Os campos obrigatórios: nome, assunto tratado e se recebeu certificado ;
+    \item Pode ser realizada a ação de cancelar a atividade;
+    \item Um botão deve ser acionado para aplicar as mudanças desejadas.
+\end{itemize}
+
+\textbf{Nome: Atualizar informações de congressos, palestras e workshops\\
+    Prioridade: Baixíssima\\
+    Identificador: US11\\
+    Descrição:} Eu, como membro da Zenit, desejo modificar as informações dos Congressos, palestras e workshops que já participei para que a empresa tenha conhecimento de meus trabalhos e conhecimentos.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário com os campos pré-carregados com os dados anteriores, onde o usuário preencherá os campos: nome, data em que foi feito, tempo de duração, assunto tratado, se recebeu certificado.
+    \item Os campos obrigatórios: nome, assunto tratado e se recebeu certificado ;
+    \item Pode ser realizada a ação de cancelar a atividade;
+    \item Um botão deve ser acionado para aplicar as mudanças desejadas.
+    
+\end{itemize}
+
+\textbf{Nome: Inserir informações atualizadas da área de conhecimentos extra\\
+    Prioridade: Média\\
+    Identificador: US06\\
+    Descrição:} Eu, como membro da Zenit, desejo inserir as informações dos meus conhecimentos extras para que a empresa tenha conhecimento de meus conhecimentos adquiridos externamente.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário onde o usuário preencherá os campos: conhecimento                     ( conhecimentos que podem ser uteis para a empresa em seus projetos como idiomas que domina por exemplo), Nível de conhecimento (que será escolhido entre Básico, Intermediário e Avançado)
+    \item Os campos obrigatórios: conhecimento e nível de conhecimento;
+    \item Pode ser realizada a ação de cancelar;
+    \item Um botão deve ser acionado para aplicar as mudanças desejadas.
+\end{itemize}
+
+\textbf{Nome: Atualizar informações da área de conhecimentos extra\\
+    Prioridade:Baixíssima\\
+    Identificador: US0\\
+    Descrição:} \\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Haverá um formulário com informações pré-carregadas, onde o usuário preencherá os campos: conhecimento ( conhecimentos que podem ser uteis para a empresa em seus projetos como idiomas que domina por exemplo), Nível de conhecimento (que será escolhido entre Básico, Intermediário e Avançado)
+    \item Os campos obrigatórios: conhecimento e nível de conhecimento;
+    \item Pode ser realizada a ação de cancelar;
+    \item Um botão deve ser acionado para aplicar as mudanças desejadas.
+\end{itemize}
+
+\subsection{Gerenciar perfil de acesso}
+
+\textbf{Nome: Modificar perfis dos membros\\
+Prioridade: Altíssima\\
+Identificador: US 01\\
+Pontuação: 03\\
+Descrição:} Eu, como gestor de pessoas, desejo que os membros da empresa sejam diferenciados pelo perfil para que eles possam ter permissões de acessos diferenciadas a certo conteúdos.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Os membros devem ser diferenciados pelo perfil de permissão de acesso(\textbf{gestor,gestor de pessoas,presidente,assessor, treinee, conselho consultivo, desligados ou excluídos (justa causa)}).
+    \item Assessores e treinees tem permissão de membro no sistema.
+    \item Os excluídos e os desligados não terão poder de acesso ao sistema, apenas continuaram com seus dados mantidos.
+    \item Os membros terão acesso apenas ao seu próprio perfil, e ao acesso das histórias que eles sejam o ator principal.
+    \item Os gestores terão acesso a tudo que o membro tem acesso mais o acesso referente das histórias que eles sejam o ator principal.
+    \item O gestor de pessoa e os presidentes terão acesso máximo no sistema.
+    \item Deve se ter uma página para mudar o perfil dos usuários.
+\end{itemize}
+
+\textbf{Nome: Gerar novo usuário\\
+Prioridade: Alta\\
+Identificador: US02\\
+Pontuação: 02\\
+Descrição: }Eu, como gestor de pessoa, quero poder cadastrar membros no sistema para que eles possam usufruir dos recursos do software.\\
+\textbf{Critério de aceitação:}
+\begin{itemize}
+    \item Campos obrigatórios: perfil do usuário, email da Zenit.
+    \item Será criado uma senha padrão.
+    \item Campos obrigatórios não preenchidos devem gerar mensagem de erro ao tentar salvá-los.
+    \item A ação de cadastro pode ser cancelada.
+\end{itemize}
+
+
+\textbf{Nome: Recuperar senha\\
+Prioridade: Baixa\\
+Identificador: US03 \\
+Descrição: }Eu como membro, quero poder recuperar minha senha para que eu possa voltar a ter acesso ao sistema caso eu a esqueça.\\
+\textbf{Critério de aceitação:}
+\begin{itemize}
+    \item Será criado um botão de ‘Esqueci senha’.
+    \item Uma modal irá aparecer na tela com um campo que receberá o e-mail ou nome completo.
+    \item Na modal terá um botão de enviar
+    \item Uma nova senha será enviada para o email.
+\end{itemize}
+
+\textbf{Nome: Alterar senha\\
+Prioridade: Média\\
+Identificador: US04\\
+Pontuação: \\
+Descrição: }Eu como membro, quero poder alterar minha senha para que eu possa escolher uma senha mais segura.\\
+\textbf{Critério de aceitação:}
+\begin{itemize}
+    \item O membro deve poder mudar sua senha para um de sua preferência.
+    \item Campos obrigatórios: Senha atual, nova senha, confirmação nova senha.
+    \item Campos obrigatórios não preenchidos ou preenchidos incorretamente devem gerar mensagem de erro ao tentar salvá-los.
+    \item A ação de alterar senha pode ser cancelada.
+\end{itemize}
+
+\textbf{Nome: Login e logout\\
+Prioridade: Alta\\
+Identificador: US05\\
+Pontuação:\\
+Descrição:} Eu como membro desejo inserir meus dados de login para que eu possa ter acesso ao sistema.
+\textbf{Critério de aceitação: }
+\begin{itemize}
+    \item Campo para inserir dados do login, sendo estes: Email Zenit e Senha do membro.
+    \item Botão de acessar o sistema
+\end{itemize}
+
+\section{Acompanhamento de atividades internas do membro}
+
+\subsection{Informações pessoais e internas}
+
+\textbf{Nome: Disponibilizar horários em perfil\\
+Prioridade: baixíssima\\
+Identificador: US01\\
+Descrição: }Eu, como membro, quero disponibilizar os horários que estarei presente no laboratório, para que possa ser feito o acompanhamento de onde estou e o que estou fazendo.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Um quadro disponível para inserir e ver os horários.
+    \item Os tipos de horário são: presente no escritório, reuniões de projeto, semanal, gestores.
+    \item Cada tipo de horário possuirá uma cor.
+    \item Para alterar é preciso clicar no botão de editar.
+    \item Para persistir alterações é preciso clicar no botão salvar.
+    \item O quadro conterá os horários de segunda a sexta.
+    \item Os horários serão de 8h até 22h.
+    \item Os horários serão separados em 2h, exceto de meio dia
+\end{itemize}
+
+\textbf{Nome: Disponibilizar monitorias no perfil do membro\\
+Prioridade: baixa\\
+Identificador: US2\\
+Descrição:} Eu, como membro, quero ver as disciplinas de monitoria de outro membro, a fim de pedir ajuda nas disciplinas que tenho dificuldade.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Uma listagem com as disciplinas que o membro se dispõe a dar monitoria.
+    \item Deve conter o e-mail e telefone do membro que disponibiliza a monitoria.
+    \item As disciplinas devem estar em ordem alfabética.
+\end{itemize}
+
+\textbf{Nome: Dar punição a membro\\
+Prioridade: baixíssima\\
+Identificador: US9\\
+Descrição:} Eu,como gestor de pessoas, quero adicionar uma punição ao membro, para ele estar ciente de suas transgressões.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Deve haver um botão para adicionar punições.
+    \item Deve haver seleção do tipo de punição: advertência, suspensão, desligamento, exclusão.
+    \item Os tipos desligamento e exclusão devem mudar imediatamente o perfil do membro punido.
+    \item A justificativa da punição é campo obrigatório.
+    \item Para completar a inserção da punição é necessário clicar em salvar.
+    \item Se não selecionado um tipo de punição, será colocado advertência por padrão.
+    \item Deve ser gerado uma mensagem indicando se a punição foi salva, ou se houve erro ao salvar.
+    \item A data em que ocorreu a punição deve ser adicionada automaticamente, ao salvá-la.
+\end{itemize}
+
+\textbf{Nome: Membro ver punições\\
+Prioridade: média\\
+Identificador: US05\\
+Descrição: }Eu, como membro da Zenit, quero ver as punições que já recebi, para saber todas as punições que já tomei e corrigir minha conduta.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Membros sem punição deve aparecer uma mensagem indicando.
+    \item A lista de punições deve aparecer ordenadas pela data de criação.
+\end{itemize}
+
+
+\section{Gerenciar informações da Zenit}
+\subsection{Gerenciamento das atividades dos membros em projetos internos à Zenit}
+\textbf{Nome: Registrar novo um projeto\\
+    Prioridade:  Altíssima\\
+    Identificador: US01\\
+    Descrição:} Eu, como um gestor, quero registrar informações de um projeto, para poder associar os membros a ele.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item As informações necessárias serão: nome do projeto, descrição resumo, gerente do projeto.
+    \item A ação de registro pode ser cancelada.
+    \item O nome do projeto e o gerente responsável por ele são obrigatórios.
+    \item Campos obrigatórios não preenchidos devem gerar mensagem de erro ao tentar salvá-los.
+    \item Os dados só são registrados ao pressionar o botão salvar.
+\end{itemize}
+
+
+\textbf{Nome: Alterar dados do projeto\\
+    Prioridade: Baixa\\
+    Identificador: US21\\
+    Descrição:} Eu, como um gestor, quero modificar informações dos projetos, para poder atualizá-lo de acordo com as mudanças ao longo do tempo.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item As informações necessárias serão: nome do projeto, descrição resumo, gerente do projeto.
+    \item A ação de modificar pode ser cancelada.
+    \item O nome da área e o gestor são campos obrigatórios.
+    \item Campos obrigatórios não preenchidos devem gerar mensagem de erro ao tentar salvá-los.
+    \item Os dados só são registrados ao pressionar o botão salvar.
+    \item Os campos devem ser preenchidos com os valores já cadastrados.
+\end{itemize}
+
+
+\textbf{Nome: Projetos no perfil do membro\\
+    Prioridade: Alta\\
+    Identificador: US02\\
+    Descrição:} Eu, como membro, quero que outros membros vejam os projetos que já participei em meu perfil, para que possam me contatar para me informarem sobre coisas relacionadas ao projeto.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Uma lista com todos os projetos ordenados pelos que sou membro ativo, e ordem alfabética.
+\end{itemize}
+
+\textbf{Nome: Ver projetos da empresa\\
+    Prioridade: Alta\\
+    Identificador: US03\\
+    Descrição:} Eu, como membro, gostaria de ver os projetos da empresa, para poder conhecer todos os projetos que estão acontecendo e que já passaram.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Uma lista com todos os nomes dos projetos.
+    \item A opção para visualizar apenas projetos finalizados ou ativos.
+    \item Caso nenhum projeto esteja disponível para visualização, uma mensagem de alerta deve ser emitida.
+    \item Os projetos devem estar em ordem \textbf{alfabética}.
+\end{itemize}
+
+\textbf{Nome:  Ver membros em projetos\\
+    Prioridade: Média\\
+    Identificador: US04\\
+    Descrição:} Eu, como um membro, quero ver os membros associados a um projeto, a fim de encontrar os membros e contatar para passar informações relevantes.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Uma listagem com o nome de todos os membros que já participaram.
+    \item Ver todas as atividades desempenhadas e as datas de início e término.
+    \item Um botão para exibir os membros ativos ou desativos do projeto.
+\end{itemize}
+
+\textbf{Nome: Associar membros a projetos\\
+Prioridade: Altíssima\\
+Identificador: US 05\\
+Descrição:} Eu, como gestor, quero ativar ou desativar um membro de um projeto, para saber quais membros estão trabalhando no projeto atualmente.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Mudar o estado de um membro dentro do projeto.
+    \item Os possíveis estados são: ativo, não ativo, não participante.
+    \item O membro não pode recusar seu estado em um projeto.
+    \item Uma lista é gerada com todos os membros não participantes do projeto para que possa mudar seu estado.
+\end{itemize}
+
+
+\textbf{Nome: Adicionar atividades para membros em projetos\\
+Prioridade: Baixa\\
+Identificador: US 06\\
+Descrição:} Eu, como gerente, quero registrar as atividades de um membro no projeto pelo qual sou responsável, para poder acompanhar o que está fazendo.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item A atividade conterá o nome, descrição resumo, data de início, de termino, se foi concluída ou não.
+    \item Todos os campos são obrigatórios e descrição resumo optativa.
+    \item Mensagem de alerta é gerada para campos obrigatórios não preenchidos.
+    \item Para salvar os dados, é preciso clicar no botão salvar.
+    \item O registro pode ser cancelado.
+\end{itemize}
+
+\textbf{Nome: Alterar atividades de um membro em projetos\\
+Prioridade: Baixíssima\\
+Identificador: US 20\\
+Descrição: }Eu, como gerente, quero modificar as as atividades de um membro no projeto pelo qual sou responsável, para garantir que as atividades estejam corretas mesmo se houver erro durante a criação da atividade.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Os dados são pré carregados nos campos do formulário.
+    \item Todos os campos podem ser alterados.
+    \item Os campos nome, data de início, de termino, se foi concluída ou não são obrigatórios.
+    \item Descrição resumo é campo optativo.
+    \item Mensagem de alerta é gerada para campos obrigatórios não preenchidos.
+    \item Para salvar os dados, é preciso clicar no botão salvar.
+    \item A modificação pode ser cancelada.
+\end{itemize}
+
+\subsection{Gerenciamento das informações sobre atividades da área interna}
+
+\textbf{Nome: Inserir uma nova área interna\\
+Prioridade: Alta\\
+Identificador: US12\\
+Descrição:} Eu, como um gestor, quero registrar informações das áreas internas da Zenit, para poder associar os membros a ela.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item As informações necessárias serão: nome da área interna, descrição resumo, gestor da área.
+    \item A ação de registro pode ser cancelada.
+    \item O nome da área e o gestor são campos obrigatórios.
+    \item Campos obrigatórios não preenchidos devem gerar mensagem de erro ao tentar salvá-los.
+    \item Os dados só são registrados ao pressionar o botão salvar.
+\end{itemize}
+
+\textbf{Nome: Alterar informações da área interna\\
+Prioridade: Baixa\\
+Identificador: US 19\\
+Descrição: }Eu, como um gestor, quero modificar informações das áreas internas da Zenit, para poder atualizar as informações de uma área interna de acordo com as mudanças feitas na empresa.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item As informações necessárias serão: nome da área interna, descrição resumo, gestor da área.
+    \item A ação de registro pode ser cancelada.
+    \item O nome da área e o gestor são campos obrigatórios.
+    \item Campos obrigatórios não preenchidos devem gerar mensagem de erro ao tentar salvá-los.
+    \item Os dados só são registrados ao pressionar o botão salvar.
+\end{itemize}
+
+\textbf{Nome: Ver área interna no perfil do membro\\
+Prioridade: Alta\\
+Identificador: US 13\\
+Descrição: }Eu, como membro, quero que outros membros vejam as áreas internas que já fui assessor em meu perfil, para que possam me contatar para me informarem sobre coisas relacionadas a essa área.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item É exibido somente o nome da área interna que o membro está ativo.
+\end{itemize}
+
+\textbf{Nome: Ver áreas internas da empresa\\
+Prioridade: Média\\
+Identificador: US 14\\
+Descrição: }Eu, como membro, gostaria de ver as áreas internas da Zenit, para poder conhecer todas as áreas de atividades que a empresa tem.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Uma lista com todas as áreas internas.
+    \item Caso nenhuma área esteja disponível para visualização, uma mensagem de alerta deve ser emitida.
+    \item As áreas internas serão exibidas em ordem alfabética.
+\end{itemize}
+
+\textbf{Nome: Ver assessores de uma área interna\\
+Prioridade: Média\\
+Identificador: US 15\\
+Descrição:} Eu, como um membro, quero ver os membros de uma área interna, a fim de encontrar os membros e contatar para passar informações relevantes.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Uma listagem com o nome de todos os membros que já foram assessores.
+    \item Ver todas as atividades desempenhadas e as datas de início e término.
+    \item Um botão para exibir os assessores ativos e desativos.
+\end{itemize}
+
+\textbf{Nome: Associar membros a áreas internas\\
+Prioridade: Alta\\
+Identificador: US 16\\
+Descrição: }Eu, como gestor, quero ativar ou desativar um assessor da minha área interna da Zenit, para indicar quais são meus assessores.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Mudar o estado de um membro dentro do projeto.
+    \item Os possíveis estados são: ativo, não ativo, não participante.
+    \item O membro não pode recusar seu estado em um projeto.
+    \item Uma lista é gerada com todos os membros não participantes do projeto para que possa mudar seu estado.
+\end{itemize}
+
+\textbf{Nome: Adicionar atividades aos assessores\\
+Prioridade: Baixa\\
+Identificador: US 17\\
+Descrição:} Eu, como gestor, quero registrar as atividades delegadas aos assessores da minha área interna, para poder acompanhar as atividades dos meus assessores.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item A atividade conterá o nome, descrição resumo, data de início, de termino, se foi concluída ou não.
+    \item Todos os campos são obrigatórios e descrição resumo optativa.
+    \item Mensagem de alerta é gerada para campos obrigatórios não preenchidos.
+    \item Para salvar os dados, é preciso clicar no botão salvar.
+    \item O registro pode ser cancelado.
+\end{itemize}
+
+\textbf{Nome: Alterar atividades dos assessores\\
+Prioridade: Baixíssima\\
+Identificador: US 11\\
+Descrição:} Eu, como gestor, quero modificar as atividades delegadas aos assessores da área interna, remover informações inválidas ou incorretas do sistema.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Os dados são pré carregados nos campos do formulário.
+    \item Todos os campos podem ser alterados.
+    \item Os campos nome, data de início, de termino, se foi concluída ou não são obrigatórios.
+    \item Descrição resumo é campo optativo.
+    \item Mensagem de alerta é gerada para campos obrigatórios não preenchidos.
+    \item Para salvar os dados, é preciso clicar no botão salvar.
+    \item A modificação pode ser cancelada.
+\end{itemize}
+
+\subsection{Gerenciamento das informações sobre mini cursos}
+
+\textbf{Nome: Ver participações em minicursos no perfil\\
+Prioridade: Média\\
+Identificador: US 07\\
+Descrição:} Eu, como membro, quero ver os minicursos que outro membro participou no seu perfil, para que ver suas participações e motivação quanto as atividades internas da empresa.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Todos os minicursos que ele participou serão listados.
+    \item A descrição será exibida.
+\end{itemize}
+
+\textbf{Nome: Ver todos minicursos\\
+Prioridade: Média\\
+Identificador: US 08\\
+Descrição:} Eu, como membro, desejo ver todas as informações do minicurso, para ver o quanto eles são interessantes e todos os membros que participaram.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item As informações mostradas são: Nome, membro ministrante, participantes, descrição e a carga horária.
+    \item Todos os mini cursos são exibidos em uma lista.
+\end{itemize}
+
+\textbf{Nome: Inserir novo mini curso\\
+Prioridade: Alta\\
+Identificador: US 09\\
+Descrição: }Eu, como gestor de pessoas, quero registrar um minicurso para armazenar os cursos que são ministrados pela Zenit.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Os campos obrigatórios são: nome, membro ministrante, os membros participantes e a carga horária.
+    \item Os campos opcionais são: descrição e o tipo interno ou externo.
+    \item A operação poderá ser cancelada.
+    \item Os dados só são gravados após salvar.
+    \item Mensagem de alerta é gerada caso campo obrigatório esteja em branco.
+    \item Os membros serão listados no qual será selecionado apenas os participantes.
+\end{itemize}
+
+\textbf{Nome: Alterar informações do mini curso\\
+Prioridade: Baixa\\
+Identificador: US 10\\
+Descrição:} Eu, como gestor de pessoas, quero modificar um minicurso para armazenar os cursos que são ministrados pela Zenit.\\
+\textbf{Critérios de aceitação:}
+\begin{itemize}
+    \item Os campos obrigatórios são: nome, membro ministrante, os membros participantes e a carga horária.
+    \item Os campos opcionais são: descrição e o tipo interno ou externo.
+    \item Todos os dados podem ser alterados.
+    \item A operação poderá ser cancelada.
+    \item Os dados só são gravados após salvar.
+    \item Mensagem de alerta é gerada caso campo obrigatório esteja em branco.
+    \item Os membros serão listados no qual será selecionado apenas os participantes.
+\end{itemize}
+
+\chapter[Documento de mudanças]{Documento de mudanças}
+
+\section[Intodução]{Introdução}
+
+Após a reunião 4, na qual a equipe elicitava as histórias de usuário das features de informações profissionais e projetos, que estava relacionada ao épico de informações sobre membros da empresa, a equipe notou que algumas histórias estavam se distanciando da feature ao qual pertencia, e que talvez aquela feature não se adequasse ao épico que estava inserida. Então, a equipe achou interessante abordar a organização, que até então era a atual, de forma diferente. Nesse tópico será tratado quais foram essas mudanças.\\
+
+\subsection[O que foi acrescentado]{O que foi acrescentado}
+
+Foram acrescentados novas funcionalidades que apresentarão os horários internos da empresa, o controle e visualização das punições dos membros e de mini cursos, e  informações sobre as monitorias internas da empresa.\\
+
+\subsection[O que foi retirado]{O que foi retirado}
+
+Inicialmente nada foi retirado do escopo, apenas renomeadas para melhor definir seu novo escopo e remanejado.\\
+
+\subsection[Mudança na rastreabilidade]{Mudança na rastreabilidade}
+
+As funcionalidades de busca dentro de cada feature do EP01, foram granularizada em uma única feature específica para busca. Essa feature foi transferida para o EP02 como mostra o quadro de rastreabilidade de antes da mudança e depois: \\
+
+\section[Analisar riscos]{Analisar riscos}
+
+Nesse tópico será tratado quais são os riscos e os impactos que essas mudanças ocasionará no projeto.\\
+
+\subsection[Riscos e impactos]{Riscos e impactos}
+
+Como o escopo do projeto aumentou e o tempo para entregar o produto final continua o mesmo, a equipe terá que desempenhar um maior esforço para aplicar as mudanças e para desenvolver as funcionalidades que tenham maior prioridade. Isso ocasionará em um aumento no custo do projeto,  provocará um possível atraso nas funcionalidades consequentes e/ou diminuirá a qualidade do produto final.\\
+
+\section[Rastrear mudanças]{Rastrear mudanças}
+
+Nesse tópico será localizado onde as mudanças serão aplicadas no sistema.\\
+
+\subsection[A nível de épico]{A nível de épico}
+    
+As novas funcionalidades apresentadas no tópico 1.1 serão alocadas em um novo épico chamado: “acompanhamento de atividades internas do membro”(EP04).\\
+    
+\subsection[A nível de feature]{A nível de feature}
+
+A antiga divisão das features “gerenciar informações de projetos” e “gerenciar informações profissionais” sofreram alterações. Essas alterações deram origem ao novo épico já mencionado no tópico 3.1 e a uma nova feature denominada: “gerenciar informações externas a Zenit”(FT02).\\
+Cada funcionalidade mencionada no tópico 1.1 deu origem a uma nova feature dentro do épico “acompanhamento de atividades internas do membro”.\\
+Além do acréscimo no escopo, houve mudanças também na rastreabilidade do sistema, em que foi criado uma nova feature para busca (“busca de informações sobre os membros”, FT17) que foi alocada no EP02.\\
+
+\subsection[A nível de história]{A nível de história}
+
+Como houve o acréscimo de novas features, novas histórias foram elicitadas com o cliente para essas novas features.\\
+Além desse acréscimo, foram removidas as histórias referente a busca nas FT01, FT02  e Nas features do EP04 para que fosse criado a FT17 pudesse haver um detalhamento maior dessa funcionalidade.\\
+
+\chapter[Visão]{Visão}
+
+\section[Introdução]{Introdução}
+
+Tradicionalmente os requisitos de um produto de software são representados em forma de um documento dando uma visão geral do sistema. Em metodologias ágeis, mesmo não tendo foco em documentação, um documento que representa a visão geral do produto é bem aproveitado com essa finalidade \cite{leffingwell2011}\\
+
+Leffingwell (2011) diz que o documento de visão em metodologias ágeis geralmente respondem as seguintes perguntas:
+\begin{itemize}
+    \item Porque estamos desenvolvendo essa aplicação?
+    \item O que essa solução particular resolve?
+    \item Quem irá se beneficiar da solução proposta?
+    \item Quais são as características e benefícios que ela provem?
+    \item Quais são os requisitos não funcionais?
+\end{itemize}
+
+\section[Objetivos]{Objetivos}
+
+O objetivo central do desenvolvimento desse sistema é levantar os requisitos e necessidades da gestão de pessoas da empresa júnior de aeroespacial da Universidade de Brasília do Gama, a Zenit Aerospace, para que seja possível automatizar alguns processos da empresa na área de gestão de pessoas diminuindo assim, sua atual ineficiência neste setor.\\
+
+\section[O problema]{O problema}
+
+\begin{table}[H]
+    \centering
+    \label{descricaodoprobelma}
+    \caption{Descrição do problema}
+    \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{O problema da empresa é:} & Ineficiência da gestão de pessoas.\\
+        \hline
+        \textbf{Afeta:} & Os gestores da Zenit.\\
+        \hline
+        \textbf{As consequências são:} & Ineficiência de escolha de membros para os projetos e a desmotivação para realizar certas atividades dos membros.\\
+        \hline
+        \textbf{Uma solução bem sucedida seria:} & Um sistema que centralizaria as informações dos membros da empresa\\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+O principal problema que a empresa deseja solucionar é a ineficiência na gestão de pessoas. Este problema é ocasionado por sub problemas que estão apresentados no diagrama de causa e efeito representado pela figura \ref{zenitOrganograma}:\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=600pt,height=300pt,angle=90]{figuras/Inefici_ncia_na_gest_o_de_pessoas_p.eps}
+    \caption{Diagrama de causa e efeito\label{causaEfeito}}
+\end{figure}
+
+\subsection[As subdivisões do problema]{As subdivisões do problema}
+
+
+Nesse tópico será descrita as subdivisões do problema de ineficiência na gestão de pessoas.\\
+
+\subsubsection[Motivação dos membros]{Motivação dos membros}
+
+O departamento gestão de pessoas se preocupa com a falta de motivação dos membros, pois ela atrapalha o rendimento deles na empresa, por eles não verem reconhecimento no trabalho realizado diminuindo assim, sua proatividade e empenho na execução das tarefas.\\
+Atualmente, não há nenhum processo aplicado para resolver esse problema, apenas um desenho de uma solução que ainda não é executada.\\
+
+\subsubsection[Acompanhamento individual]{Acompanhamento individual}
+
+
+O departamento gestão de pessoas empresa não consegue acompanhar as atividades internas e externas desempenhadas pelos membros dentro da própria empresa. Entende-se como atividades internas aquelas relacionadas ao desempenho delas dentro da própria empresa, atribuídas pelos gestores dos departamentos a seus assessores, assim como as dos gestores de projetos ao integrantes. Como externas, os trabalhos realizados pelos membros que não estejam associadas a empresa, tais como participações em congressos, outros projetos.\\
+Apenas os próprios gestores, ao qual o membro é subordinado, conseguem acompanhar as tarefas internas dos projetos e do departamento destinadas a ele. Dessa forma, o departamento não é capaz de saber quais membros possuem um bom desempenho e atividades externas o membro tem.\\
+Além disso, os gestores traçam um perfil ideal, ao qual o assessor deve seguir. Atualmente, isto é feito em papel, o que dificulta o gestor de pessoas acompanhar a evolução do perfil do membro e se este está realmente tendo alguma evolução.\\
+
+\subsubsection[Falta de dados sobre os membros]{Falta de dados sobre os membros}
+
+Atualmente, a empresa contém apenas os dados pessoais dos membros, tais como: número de contato, e-mail, nome, endereço, idade, entre outros, estes  considerados superficiais pelo gestor de pessoas.  Como consequência, os gestores não tem conhecimento sobre as habilidades e capacidades dos integrantes da empresa, o que dificulta o direcionamento destes para novos projetos e atividades a serem desempenhadas em nome da empresa.\\
+
+\subsubsection[Não cumprimento de horários]{Não cumprimento de horários}
+
+
+O não cumprimento de horários é ocasionado por vários fatores, entre eles a falta de motivação dos membros, a sobre carga com outras atividades fora da empresa e o monitoramento ineficiente de presença, atrapalhando assim, o desempenho dos membros nas atividades designadas a eles.\\
+Atualmente a empresa tem uma lista de presença em papel, nela os membros tem que assinar seu nome todos os dias que eles trabalham sendo que ninguém monitora se isso ocorre ou não, e muitas das vezes eles esquecem de preenchê-la, com isso conclui-se que estes membros não estão cumprindo com suas obrigações.\\
+
+\subsection[A solução]{A solução}
+
+Esse tópico trata das soluções adotadas para cada subproblema descrito no tópico anterior, analisando os problemas que serão solucionados pelo sistema em questão.\\
+
+\subsubsection[Motivação dos membros]{Motivação dos membros}
+
+O gestor de pessoas tem um processo desenhado que  ajuda a entender quais as motivações dos assessores e bonifica quem cumpre com os critérios a serem definidos por ele, resolvendo em tese, todos os derivados desse problema apresentado na Figura 01. Por conseguinte, ao considerar que o problema possui uma solução completa definida por um processo, este produto o automatizará.\\
+
+\subsubsection[Acompanhamento individual]{Acompanhamento individual}
+
+Para que o gestores possam cumprir suas funções e acompanhar as atividades e desempenho dos membros, a solução é produzir um histórico de realizações dos membros preenchidas pelos gestores responsáveis, de forma que somente os gestores e o próprio membro tenham acesso.\\
+O gestor salva um perfil ideal e o atual de um assessor e atualiza as informações de acordo com o desenvolvimento dele, mantendo um histórico para que o gestor responsável, o gestor de pessoas e o próprio integrante possam visualizar a evolução.\\
+
+\subsubsection[Falta de dados sobre os membros]{Falta de dados sobre os membros}
+
+Armazenar todas as informações pessoais em um banco de dados, além de adicionar as demais informações que a empresa tem interesse em conhecer sobre os seus membros.\\
+A solução não determinará um processo para a atualização das informações, apenas disponibilizará que estes possam ser manipulados e armazenados em uma base de dados.\\
+
+\subsubsection[Não cumprimento de horários]{Não cumprimento de horários}
+
+Como o problema de não cumprimento de horário, é relacionado também a sobre carga dos alunos com o outras atividades, essa parte do problema não terá uma solução em software. Sendo assim, será tratado apenas a ineficiência na lista de presença com uma lista de presença digital cuja assinatura é feita de forma automática, gerando uma visualização gráfica da assiduidade, eliminando a parte do problema do membro esquecer de assinar ou simplesmente, algum membro assinar por outro, com possibilidade de alertar para o gesto de pessoas caso hajam muitas faltas de um membro.\\
+
+\subsection[Beneficiados da solução]{Beneficiados da solução}
+
+Nesse tópico será descrito todos os beneficiados do sistema e como isso ocorrerá.\\
+
+
+\subsubsection[O gestor de pessoas]{O gestor de pessoas}
+
+A solução proposta, está focada em facilitar o processo do gestor de pessoas da Zenit, proporcionando a este a automatização dessas atividades tornando-as mais eficientes e eficaz, aumentando assim, sua produtividade.\\
+
+\subsubsection[Os gestores]{Os gestores}
+
+Uma das caraterísticas do sistema, é o conhecimento dos assessores pelos seus gestores. O sistema possibilita ao gestor dados do perfil do membro para que este  possa traçar medidas para moldar os seus assessores de modo que seus perfis  cheguem o mais perto do perfil ideal de cada necessidade do seu gestor.\\
+
+\subsubsection[Os assessores]{Os assessores}
+
+Como cada gestor terá um maior domínio dos conhecimentos sobre seus assessores, sendo assim os assessores serão melhor geridos, além do que, uma das características do sistema é motivar seus membros, e os assessores serão bonificados por essa característica do sistema.\\
+
+\subsection[Funcionalidades do produto]{Funcionalidades do produto}
+
+As funcionalidades do produto descreverão as características e benefícios que o sistema proporcionará a quem se beneficiará dele.\\
+
+\subsubsection[Requisitos funcionais]{Requisitos funcionais}
+
+\textbf{Manter informações acadêmicas:} Os membros da empresa precisam inserir e manter atualizada suas informações acadêmicas, para permitir à empresa conhecê-los.\\
+
+\textbf{Manter informações profissionais:} Os membros da empresa precisam inserir e manter atualizada suas informações profissionais, para permitir à empresa conhecê-los.\\
+
+\textbf{Manter informações de participações em projetos:} Os membros da empresa precisam inserir e manter atualizada suas informações relativas aos projetos da faculdade e da própria Zenit, para permitir à empresa conhecê-los.\\
+
+\textbf{Manter informações pessoais:} Os membros da empresa precisam inserir e manter atualizada suas informações relativas aos dados pessoais, para permitir à empresa conhecê-los.\\
+
+\textbf{Gerenciamento de perfis profissionais:} Os gestores precisam inserir o perfil dos assessores para poder acompanhar a evolução do perfil deles até o ideal. Gerenciamento da evolução do perfil dos membros.\\
+
+\textbf{Acompanhamento motivacional dos membros:} O gestor de pessoas quer saber o quanto os funcionários tiveram de desempenho baseados nos critérios pontuados por ele, para poder bonificar, com o prêmio escolhido pelos próprios funcionários, os que obtiveram maior desempenho.\\
+
+\textbf{Suporte ao acompanhamento dos gestores:} Os gestores da Zenit querem ter acesso as informações dos membros e poder notificar ao gestor de pessoas os membros que não estejam bem.\\
+
+\textbf{Acompanhamento de presença:} Responsável por gerenciar o quadro de horários dos membros da empresa, com a geração de um relatório de presença, a fim de identificar membros não assíduos.\\
+
+\subsubsection[Requisitos não funcionais]{Requisitos não funcionais}
+
+\textbf{Segurança:} Apenas usuários com privilégio de acesso de Gestor poderão visualizar informações de desempenho.\\
+
+\textbf{Integridade:} A atualização das informações do usuário é feita pelo próprio usuário ou usuários com perfil de acesso de gestor.\\
+
+\textbf{Portabilidade:} O serviço web deve estar disponível para funcionar tanto no Windows quanto no Linux.\\
+
+\textbf{Design:} O sistema deve ter uma interface que permita integrar com outros módulos de sistemas a serem construídos. Uso do padrão arquitetural em três camadas: model-view-controller.\\
+
+\textbf{Usabilidade:} O sistema deve adaptar as interfaces de interação com o usuário de acordo com a resolução dos dispositivos.\\
+
+\textbf{Disponibilidade:} O sistema deve estar disponível de segunda a sábado, 24 horas por dia. O sistema deve estar disponível para acesso a qualquer rede.\\
+
+\chapter[Processo geral]{Processo geral da engenharia de requisitos}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=600pt,height=300pt,angle=90]{figuras/processo.eps}
+    \caption[Processo geral]{Processo geral da Engenharia de requisitos}
+\end{figure}
+\end{anexosenv}
